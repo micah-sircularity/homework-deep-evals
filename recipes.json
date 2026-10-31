@@ -1,0 +1,237 @@
+[
+    {
+        "id": 1,
+        "name": "Classic Margherita Pizza",
+        "cuisine": "Italian",
+        "difficulty": "easy",
+        "prep_time": 20,
+        "cook_time": 15,
+        "servings": 4,
+        "ingredients": [
+            "pizza dough", "San Marzano tomatoes", "fresh mozzarella",
+            "fresh basil", "olive oil", "salt"
+        ],
+        "instructions": "Preheat oven to 475°F. Roll out dough on a floured surface. Spread crushed tomatoes evenly. Tear mozzarella into pieces and distribute over sauce. Bake for 12-15 minutes until crust is golden. Top with fresh basil and a drizzle of olive oil.",
+        "tags": ["vegetarian", "classic"]
+    },
+    {
+        "id": 2,
+        "name": "Chicken Tikka Masala",
+        "cuisine": "Indian",
+        "difficulty": "medium",
+        "prep_time": 30,
+        "cook_time": 40,
+        "servings": 4,
+        "ingredients": [
+            "chicken breast", "yogurt", "garam masala", "turmeric",
+            "cumin", "tomato sauce", "heavy cream", "garlic",
+            "ginger", "onion", "cilantro", "rice"
+        ],
+        "instructions": "Marinate chicken in yogurt, garam masala, turmeric, and cumin for at least 1 hour. Grill or broil chicken until charred. In a pan, sauté onion, garlic, and ginger. Add tomato sauce and spices, simmer 15 minutes. Add cream and cooked chicken. Simmer 10 more minutes. Serve over rice with cilantro.",
+        "tags": ["protein-rich", "spicy"]
+    },
+    {
+        "id": 3,
+        "name": "Caesar Salad",
+        "cuisine": "American",
+        "difficulty": "easy",
+        "prep_time": 15,
+        "cook_time": 0,
+        "servings": 2,
+        "ingredients": [
+            "romaine lettuce", "parmesan cheese", "croutons",
+            "Caesar dressing", "lemon juice", "anchovy paste",
+            "garlic", "olive oil", "egg yolk"
+        ],
+        "instructions": "Wash and chop romaine lettuce. Make dressing: whisk egg yolk, anchovy paste, garlic, lemon juice, and olive oil. Toss lettuce with dressing. Top with shaved parmesan and croutons.",
+        "tags": ["salad", "quick"]
+    },
+    {
+        "id": 4,
+        "name": "Beef Tacos",
+        "cuisine": "Mexican",
+        "difficulty": "easy",
+        "prep_time": 15,
+        "cook_time": 20,
+        "servings": 4,
+        "ingredients": [
+            "ground beef", "taco shells", "lettuce", "tomato",
+            "cheddar cheese", "sour cream", "taco seasoning",
+            "onion", "salsa"
+        ],
+        "instructions": "Brown ground beef with diced onion. Add taco seasoning and water, simmer until thickened. Warm taco shells. Serve beef in shells topped with lettuce, tomato, cheese, sour cream, and salsa.",
+        "tags": ["quick", "family-friendly"]
+    },
+    {
+        "id": 5,
+        "name": "Vegetable Stir Fry",
+        "cuisine": "Chinese",
+        "difficulty": "easy",
+        "prep_time": 15,
+        "cook_time": 10,
+        "servings": 3,
+        "ingredients": [
+            "broccoli", "bell pepper", "carrot", "snap peas",
+            "soy sauce", "sesame oil", "garlic", "ginger",
+            "cornstarch", "rice"
+        ],
+        "instructions": "Cut all vegetables into bite-sized pieces. Heat sesame oil in a wok over high heat. Add garlic and ginger, stir 30 seconds. Add vegetables starting with carrots and broccoli, then softer vegetables. Stir in soy sauce and cornstarch slurry. Cook until sauce thickens. Serve over rice.",
+        "tags": ["vegetarian", "vegan", "quick", "healthy"]
+    },
+    {
+        "id": 6,
+        "name": "Spaghetti Carbonara",
+        "cuisine": "Italian",
+        "difficulty": "medium",
+        "prep_time": 10,
+        "cook_time": 20,
+        "servings": 4,
+        "ingredients": [
+            "spaghetti", "guanciale", "egg yolks", "pecorino romano",
+            "black pepper", "salt"
+        ],
+        "instructions": "Cook spaghetti in salted water. Crisp guanciale in a pan. Whisk egg yolks with grated pecorino and black pepper. Drain pasta, reserving some water. Toss hot pasta with guanciale, then quickly stir in egg mixture off heat. Add pasta water as needed for a creamy sauce. Serve immediately with extra pecorino.",
+        "tags": ["classic", "pasta"]
+    },
+    {
+        "id": 7,
+        "name": "Thai Green Curry",
+        "cuisine": "Thai",
+        "difficulty": "medium",
+        "prep_time": 20,
+        "cook_time": 25,
+        "servings": 4,
+        "ingredients": [
+            "chicken thigh", "coconut milk", "green curry paste",
+            "bamboo shoots", "Thai basil", "fish sauce",
+            "palm sugar", "eggplant", "bell pepper", "jasmine rice"
+        ],
+        "instructions": "Heat coconut cream in a wok until oil separates. Fry curry paste 2 minutes. Add sliced chicken, cook until sealed. Pour in coconut milk, bring to simmer. Add eggplant and bamboo shoots, cook 10 minutes. Season with fish sauce and palm sugar. Add bell pepper and Thai basil. Serve over jasmine rice.",
+        "tags": ["spicy", "coconut"]
+    },
+    {
+        "id": 8,
+        "name": "Greek Salad",
+        "cuisine": "Greek",
+        "difficulty": "easy",
+        "prep_time": 10,
+        "cook_time": 0,
+        "servings": 4,
+        "ingredients": [
+            "cucumber", "tomato", "red onion", "Kalamata olives",
+            "feta cheese", "olive oil", "oregano", "red wine vinegar"
+        ],
+        "instructions": "Chop cucumber, tomatoes, and red onion into chunks. Combine in a bowl. Add Kalamata olives and crumbled feta. Dress with olive oil, red wine vinegar, and oregano. Toss gently. Let sit 5 minutes before serving.",
+        "tags": ["vegetarian", "salad", "no-cook", "healthy"]
+    },
+    {
+        "id": 9,
+        "name": "Chocolate Lava Cake",
+        "cuisine": "French",
+        "difficulty": "hard",
+        "prep_time": 20,
+        "cook_time": 14,
+        "servings": 4,
+        "ingredients": [
+            "dark chocolate", "butter", "eggs", "sugar",
+            "flour", "vanilla extract", "powdered sugar"
+        ],
+        "instructions": "Melt chocolate and butter together. Whisk eggs and sugar until thick. Fold chocolate mixture into eggs. Add flour and vanilla, mix gently. Pour into greased ramekins. Bake at 425°F for exactly 12-14 minutes - edges should be firm but center soft. Invert onto plates and dust with powdered sugar. Serve immediately.",
+        "tags": ["dessert", "chocolate"]
+    },
+    {
+        "id": 10,
+        "name": "Miso Soup",
+        "cuisine": "Japanese",
+        "difficulty": "easy",
+        "prep_time": 5,
+        "cook_time": 10,
+        "servings": 4,
+        "ingredients": [
+            "dashi stock", "white miso paste", "silken tofu",
+            "wakame seaweed", "green onion"
+        ],
+        "instructions": "Bring dashi stock to a gentle simmer. Add cubed tofu and rehydrated wakame. Ladle some broth into a bowl, dissolve miso paste in it, then pour back into pot. Do not boil after adding miso. Serve topped with sliced green onion.",
+        "tags": ["soup", "quick", "healthy", "vegan-adaptable"]
+    },
+    {
+        "id": 11,
+        "name": "Banana Pancakes",
+        "cuisine": "American",
+        "difficulty": "easy",
+        "prep_time": 10,
+        "cook_time": 15,
+        "servings": 2,
+        "ingredients": [
+            "ripe bananas", "eggs", "flour", "baking powder",
+            "milk", "butter", "maple syrup", "vanilla extract"
+        ],
+        "instructions": "Mash bananas in a bowl. Whisk in eggs, milk, and vanilla. Mix flour and baking powder, add to wet ingredients. Stir until just combined - lumps are fine. Heat butter in a pan over medium heat. Pour batter to form pancakes. Cook until bubbles form on surface, flip. Serve with maple syrup.",
+        "tags": ["breakfast", "sweet", "family-friendly"]
+    },
+    {
+        "id": 12,
+        "name": "Lamb Shawarma Bowl",
+        "cuisine": "Middle Eastern",
+        "difficulty": "medium",
+        "prep_time": 25,
+        "cook_time": 20,
+        "servings": 4,
+        "ingredients": [
+            "lamb leg", "cumin", "coriander", "paprika",
+            "turmeric", "garlic", "lemon juice", "tahini",
+            "pita bread", "pickled turnips", "hummus",
+            "tomato", "cucumber", "lettuce"
+        ],
+        "instructions": "Slice lamb thinly, marinate with cumin, coriander, paprika, turmeric, garlic, and lemon juice for at least 30 minutes. Cook lamb in a hot skillet until browned and cooked through. Make tahini sauce: mix tahini, lemon juice, garlic, and water. Assemble bowls with rice or pita, lamb, hummus, vegetables, and pickled turnips. Drizzle with tahini sauce.",
+        "tags": ["protein-rich", "bowl"]
+    },
+    {
+        "id": 13,
+        "name": "Mushroom Risotto",
+        "cuisine": "Italian",
+        "difficulty": "medium",
+        "prep_time": 10,
+        "cook_time": 35,
+        "servings": 4,
+        "ingredients": [
+            "arborio rice", "mixed mushrooms", "onion", "garlic",
+            "white wine", "vegetable broth", "parmesan cheese",
+            "butter", "olive oil", "thyme"
+        ],
+        "instructions": "Sauté mushrooms in olive oil until golden, set aside. In the same pan, cook onion and garlic in butter. Add arborio rice, toast 2 minutes. Pour in white wine, stir until absorbed. Add warm broth one ladle at a time, stirring frequently, until rice is creamy and al dente (about 18-20 minutes). Stir in mushrooms, parmesan, and fresh thyme.",
+        "tags": ["vegetarian", "comfort-food"]
+    },
+    {
+        "id": 14,
+        "name": "Fish and Chips",
+        "cuisine": "British",
+        "difficulty": "medium",
+        "prep_time": 20,
+        "cook_time": 25,
+        "servings": 4,
+        "ingredients": [
+            "cod fillets", "flour", "beer", "baking powder",
+            "potatoes", "vegetable oil", "salt", "malt vinegar",
+            "tartar sauce", "lemon", "peas"
+        ],
+        "instructions": "Cut potatoes into thick chips, soak in cold water 30 minutes. Pat dry and fry at 325°F for 5 minutes, drain. Make batter: whisk flour, baking powder, and beer until smooth. Heat oil to 375°F. Dip fish in flour, then batter. Fry fish 5-7 minutes until golden. Re-fry chips at 375°F until crispy. Serve with malt vinegar, tartar sauce, and lemon.",
+        "tags": ["fried", "classic", "seafood"]
+    },
+    {
+        "id": 15,
+        "name": "Falafel Wrap",
+        "cuisine": "Middle Eastern",
+        "difficulty": "medium",
+        "prep_time": 30,
+        "cook_time": 15,
+        "servings": 4,
+        "ingredients": [
+            "chickpeas", "onion", "garlic", "parsley", "cilantro",
+            "cumin", "coriander", "flour", "baking powder",
+            "pita bread", "tahini", "lettuce", "tomato", "pickles"
+        ],
+        "instructions": "Soak dried chickpeas overnight (do not use canned). Blend chickpeas with onion, garlic, herbs, and spices until coarse. Add flour and baking powder, mix. Form into balls or patties. Deep fry at 350°F for 3-4 minutes until dark golden. Serve in pita with tahini sauce, lettuce, tomato, and pickles.",
+        "tags": ["vegetarian", "vegan", "street-food"]
+    }
+]

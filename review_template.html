@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Recipe assistant · Evaluation review</title>
+<style>
+:root{font-family:system-ui,sans-serif;color:#192e31;background:#f4f6f3}body{max-width:1400px;margin:auto;padding:28px}h1{margin-bottom:8px}p{line-height:1.6}.toolbar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin:24px 0}button,input,select,textarea{font:inherit;padding:10px;border:1px solid #a7b9b5;border-radius:6px}button{background:#164f49;color:white;cursor:pointer}input{min-width:250px}article{background:white;border:1px solid #d5dfda;border-radius:10px;padding:22px;margin:18px 0}.meta{color:#46605a;font-size:14px;line-height:1.8}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:inherit;line-height:1.6}textarea{display:block;box-sizing:border-box;width:100%;min-height:90px;margin-top:10px}summary{cursor:pointer;padding:10px 0}label{display:block;margin-top:14px}#status{color:#46605a}article[data-label=good]{border-left:5px solid #23805b}article[data-label=bad]{border-left:5px solid #be5148}.reference{background:#eaf0eb;padding:16px;border-radius:8px}small{display:block;margin-top:8px}
+</style>
+<h1>Recipe assistant evaluation review</h1>
+<p>Validate answers against the recipe collection. Mark <strong>good</strong> for accurate, grounded answers or appropriate refusals; mark <strong>bad</strong> for invented facts, unsupported advice, missed recipes, or incorrect details.</p>
+<p>Edits are saved in this browser when storage is available. Export reviewed JSON or CSV to keep or share your labels. Exports include all rows, including hidden rows. Costs are estimates for completed scenarios, not invoice charges.</p>
+<div id="totals"></div>
+<div class="toolbar">
+<input id="search" aria-label="Search questions and answers" placeholder="Search questions or answers">
+<select id="filter" aria-label="Filter by human label"><option value="all">All labels</option><option value="">Unreviewed</option><option value="good">Good</option><option value="bad">Bad</option></select>
+<button id="json">Export reviewed JSON</button><button id="csv">Export spreadsheet CSV</button>
+</div>
+<p id="status" role="status"></p>
+<details class="reference"><summary>Recipe collection · ground truth</summary><div id="recipes"></div></details>
+<main id="rows"></main>
+<script type="application/json" id="data">__REPORT_DATA__</script>
+<script>
+const {results,recipes}=JSON.parse(document.getElementById('data').textContent);
+// Key by the full run contents: fresh runs keep separate labels, regenerated reports restore them.
+const identity=JSON.stringify(results);let hash=2166136261;for(let i=0;i<identity.length;i++){hash^=identity.charCodeAt(i);hash=Math.imul(hash,16777619)}
+const storageKey='recipe-review-v1:'+hash.toString(16);let stored={};let storageWorks=true;
+try{stored=JSON.parse(localStorage.getItem(storageKey)||'{}')}catch(e){storageWorks=false}
+results.forEach((row,i)=>{row.human_label=stored[i]?.label??row.human_label??'';row.human_notes=stored[i]?.notes??row.human_notes??''});
+const el=(tag,text,parent)=>{const node=document.createElement(tag);if(text!==undefined)node.textContent=text;if(parent)parent.append(node);return node};
+function progress(){const reviewed=results.filter(r=>r.human_label).length;document.getElementById('status').textContent=`${reviewed} / ${results.length} reviewed. `+(storageWorks?'Labels saved in this browser.':'Browser saving unavailable. Export your labels before closing.')}
+function save(){try{localStorage.setItem(storageKey,JSON.stringify(Object.fromEntries(results.map((r,i)=>[i,{label:r.human_label,notes:r.human_notes}]))))}catch(e){storageWorks=false}progress()}
+const sum=key=>results.reduce((s,r)=>s+(r.tokens?.[key]||0),0);
+el('p',`${results.length} completed scenarios · Estimated cost: $${results.reduce((s,r)=>s+(r.cost||0),0).toFixed(10)} USD · Input: ${sum('input_tokens')} · Output: ${sum('output_tokens')} · Total tokens: ${sum('total_tokens')} · Cached input: ${sum('cache_read_tokens')} · Model requests: ${sum('requests')}`,document.getElementById('totals'));
+for(const r of recipes){const d=el('details',undefined,document.getElementById('recipes'));el('summary',r.name,d);el('pre',JSON.stringify(r,null,2),d)}
+function render(){const root=document.getElementById('rows');root.replaceChildren();const query=document.getElementById('search').value.toLowerCase(),filter=document.getElementById('filter').value;
+results.forEach((r,i)=>{if(filter!=='all'&&r.human_label!==filter)return;if(!`${r.question} ${r.output} ${r.category} ${r.type}`.toLowerCase().includes(query))return;
+const card=el('article',undefined,root);card.dataset.label=r.human_label;el('h2',`${i+1}. ${r.question}`,card);
+el('p',`${r.category} / ${r.type} · ${r.model} · ${r.execution_time}s`,card).className='meta';el('pre',r.output,card);
+const t=r.tokens||{};el('p',`Input: ${t.input_tokens??0} · Output: ${t.output_tokens??0} · Total: ${t.total_tokens??0} · Cached input: ${t.cache_read_tokens??0} · Requests: ${t.requests??0} · Estimated USD: $${Number(r.cost||0).toFixed(10)}`,card).className='meta';
+if(r.pricing){const d=el('details',undefined,card);el('summary','Pricing metadata',d);el('pre',JSON.stringify(r.pricing,null,2),d)}
+if(r.judge_label)el('p',`Automated judge: ${r.judge_label}. ${r.judge_reasoning||''}`,card);
+const label=el('label','Human validation ',card),select=el('select',undefined,label);for(const [value,text] of [['','Unreviewed'],['good','Good'],['bad','Bad']]){const opt=el('option',text,select);opt.value=value}select.value=r.human_label;
+select.onchange=()=>{r.human_label=select.value;card.dataset.label=select.value;save();if(filter!=='all')render()};
+const noteLabel=el('label','Validation notes',card),notes=el('textarea',undefined,noteLabel);notes.value=r.human_notes;notes.placeholder='What is correct or wrong? Cite the recipe detail.';notes.oninput=()=>{r.human_notes=notes.value;save()};
+});progress()}
+function download(content,type,name){const url=URL.createObjectURL(new Blob([content],{type})),a=el('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)}
+document.getElementById('json').onclick=()=>download(JSON.stringify(results,null,2),'application/json','results_reviewed.json');
+document.getElementById('csv').onclick=()=>{const fields=['question','category','type','output','model','execution_time','input_tokens','output_tokens','total_tokens','cache_read_tokens','requests','cost','human_label','human_notes','judge_label','judge_reasoning'];const quote=v=>{let s=String(v??'');if(/^[\s]*[=+\-@]/.test(s))s="'"+s;return '"'+s.replaceAll('"','""')+'"'};const rows=results.map(r=>fields.map(f=>quote(r.tokens?.[f]??r[f])).join(','));download('\ufeff'+[fields.join(','),...rows].join('\r\n'),'text/csv;charset=utf-8','results_reviewed.csv')};
+document.getElementById('search').oninput=render;document.getElementById('filter').onchange=render;render();
+</script>
+</html>

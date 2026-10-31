@@ -1,0 +1,1056 @@
+[
+  {
+    "question": "How do I make spaghetti carbonara?",
+    "category": "specific-recipe",
+    "type": "direct",
+    "output": "Here's a classic Spaghetti Carbonara recipe for you:\n\n## Spaghetti Carbonara 🍝\n**Italian | Medium difficulty | Prep: 10 min | Cook: 20 min | Serves: 4**\n\n### Ingredients:\n- Spaghetti\n- Guanciale (cured pork cheek)\n- Egg yolks\n- Pecorino Romano cheese\n- Black pepper\n- Salt\n\n### Instructions:\n1. **Cook the pasta** – Boil spaghetti in salted water.\n2. **Crisp the guanciale** – Render it in a pan until crispy.\n3. **Make the egg mixture** – Whisk egg yolks with grated pecorino and black pepper.\n4. **Combine** – Drain the pasta, reserving some pasta water. Toss the hot pasta with the guanciale, then quickly stir in the egg mixture **off the heat** (this is key to avoid scrambling the eggs!).\n5. **Adjust the sauce** – Add reserved pasta water as needed until you get a silky, creamy sauce.\n6. **Serve** – Immediately, topped with extra pecorino.\n\n**Pro tip:** The heat control is everything with carbonara — tossing the egg mixture in off-heat keeps the sauce creamy rather than eggy. Would you like any other pasta recipes or tips?",
+    "execution_time": 3.9854,
+    "tokens": {
+      "input_tokens": 1800,
+      "output_tokens": 367,
+      "total_tokens": 2167,
+      "cache_read_tokens": 1408,
+      "requests": 3
+    },
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "cost": 0.00028454,
+    "pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    },
+    "human_label": "good",
+    "human_notes": "",
+    "judge_label": "good",
+    "judge_reasoning": "The answer faithfully reproduces recipe 6 (Spaghetti Carbonara): identical ingredient list (spaghetti, guanciale, egg yolks, pecorino romano, black pepper, salt), correct metadata (Italian, medium, 10 min prep, 20 min cook, 4 servings), and all steps match — cook spaghetti in salted water, crisp guanciale, whisk yolks with pecorino and pepper, drain reserving water, toss hot pasta with guanciale, stir in egg mixture off heat, add pasta water for creaminess, serve immediately with extra pecorino. The two elaborations are harmless: \"(cured pork cheek)\" is an accurate, brief ingredient definition, and the note that off-heat addition avoids scrambling simply clarifies the recipe's own explicit \"off heat\" instruction without changing any step, ingredient, or technique. No substitutions, invented facts, or out-of-scope advice are present.",
+    "agreement": "agree",
+    "judge_model": "accounts/fireworks/models/glm-5p3-flash",
+    "judge_rubric_version": "human-notes-v2",
+    "judge_execution_time": 7.3845,
+    "judge_tokens": {
+      "input_tokens": 3818,
+      "output_tokens": 1381,
+      "total_tokens": 5199,
+      "cache_read_tokens": 0,
+      "requests": 1
+    },
+    "judge_cost": 0.0012632,
+    "judge_pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    }
+  },
+  {
+    "question": "What can I cook with chicken and coconut milk?",
+    "category": "ingredient-search",
+    "type": "ingredient-based",
+    "output": "Here's a perfect match for your ingredients:\n\n## 🍛 Thai Green Curry\n- **Cuisine:** Thai | **Difficulty:** Medium\n- **Prep:** 20 min | **Cook:** 25 min | **Serves:** 4\n- **Tags:** spicy, coconut\n\n### Ingredients\n- Chicken thigh\n- Coconut milk\n- Green curry paste\n- Bamboo shoots\n- Thai basil\n- Fish sauce\n- Palm sugar\n- Eggplant\n- Bell pepper\n- Jasmine rice\n\n### Instructions\n1. Heat coconut cream in a wok until oil separates\n2. Fry curry paste for 2 minutes\n3. Add sliced chicken, cook until sealed\n4. Pour in coconut milk and bring to a simmer\n5. Add eggplant and bamboo shoots, cook for 10 minutes\n6. Season with fish sauce and palm sugar\n7. Add bell pepper and Thai basil\n8. Serve over jasmine rice\n\nThis creamy, aromatic curry is a classic use of chicken and coconut milk — the coconut cream splits to fry the curry paste, which builds a ton of flavor.\n\nIf you'd like a milder alternative, I also have a **Chicken Tikka Masala** recipe, though that one uses heavy cream instead of coconut milk. Want the details on that one?",
+    "execution_time": 3.9075,
+    "tokens": {
+      "input_tokens": 2195,
+      "output_tokens": 495,
+      "total_tokens": 2690,
+      "cache_read_tokens": 1600,
+      "requests": 3
+    },
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "cost": 0.00038475,
+    "pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    },
+    "human_label": "bad",
+    "human_notes": "you asssumed that you know what kind of chicken they have",
+    "judge_label": "bad",
+    "judge_reasoning": "The core recipe identification is accurate — Thai Green Curry (id 7) does use chicken and coconut milk, and all listed ingredients, times, and steps match the collection. However, the answer violates rule 3 (ingredient assumptions): the user said only generic \"chicken,\" while the recipe specifically requires \"chicken thigh,\" yet the agent opened with \"Here's a perfect match for your ingredients\" without acknowledging the specific cut requirement (or the many other required ingredients like green curry paste, fish sauce, palm sugar, and bamboo shoots the user never mentioned). Rule 3 explicitly instructs to acknowledge the requirement or ask for clarification \"rather than claiming a perfect match with unspecified ingredients,\" which is exactly what happened. Secondary issues reinforce this: the closing line \"the coconut cream splits to fry the curry paste, which builds a ton of flavor\" adds an unsupported technique explanation (rule 2), and describing Chicken Tikka Masala as a \"milder alternative\" is unsupported — both recipes are tagged \"spicy\" in the collection.",
+    "agreement": "agree",
+    "judge_model": "accounts/fireworks/models/glm-5p3-flash",
+    "judge_rubric_version": "human-notes-v2",
+    "judge_execution_time": 22.2465,
+    "judge_tokens": {
+      "input_tokens": 3802,
+      "output_tokens": 3910,
+      "total_tokens": 7712,
+      "cache_read_tokens": 0,
+      "requests": 1
+    },
+    "judge_cost": 0.0025253,
+    "judge_pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    }
+  },
+  {
+    "question": "I want something easy and healthy for dinner",
+    "category": "preference",
+    "type": "vague",
+    "output": "Here are three easy and healthy dinner options I found:\n\n1. **Vegetable Stir Fry** (Chinese) — Ready in ~25 minutes, serves 3\n   - Packed with broccoli, bell pepper, carrot, and snap peas in a sesame-ginger soy sauce over rice\n   - Vegetarian, vegan, and quick\n\n2. **Miso Soup** (Japanese) — Ready in ~15 minutes, serves 4\n   - A light, comforting soup with silken tofu, wakame seaweed, and green onion\n   - Vegan-adaptable\n\n3. **Greek Salad** (Greek) — Ready in just 10 minutes, no cooking required, serves 4\n   - Fresh cucumber, tomato, red onion, Kalamata olives, and feta with an olive oil–oregano dressing\n   - Vegetarian and no-cook\n\nThe stir fry is probably the most filling as a main dish, while the miso soup would be great paired with something else. Would you like the full instructions for any of these?",
+    "execution_time": 2.4142,
+    "tokens": {
+      "input_tokens": 1194,
+      "output_tokens": 315,
+      "total_tokens": 1509,
+      "cache_read_tokens": 896,
+      "requests": 2
+    },
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "cost": 0.00022908,
+    "pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    },
+    "human_label": "good",
+    "human_notes": "",
+    "judge_label": "good",
+    "judge_reasoning": "All three recommendations are verified against the collection and match the \"easy and healthy\" request. Vegetable Stir Fry (id 5): easy, prep 15 + cook 10 = ~25 min, serves 3, tagged vegetarian/vegan/quick/healthy — all claims check out; \"sesame-ginger soy sauce over rice\" faithfully reflects the sesame oil, soy sauce, ginger, and rice ingredients. Miso Soup (id 10): easy, 5 + 10 = ~15 min, serves 4, tagged soup/quick/healthy/vegan-adaptable — \"vegan-adaptable\" matches the tag. Greek Salad (id 8): easy, prep 10, cook 0 = \"no cooking required\" is correct, serves 4, tagged vegetarian/no-cook/healthy; the ingredient list (cucumber, tomato, red onion, Kalamata olives, feta, olive oil–oregano dressing) matches the recipe. The closing line about the stir fry being most filling and miso soup pairing with something else is an optional serving suggestion / conversational framing, explicitly permitted by the rubric, and does not alter any recipe. No unsupported substitutions, no invented nutrition data, no fabricated recipes.",
+    "agreement": "agree",
+    "judge_model": "accounts/fireworks/models/glm-5p3-flash",
+    "judge_rubric_version": "human-notes-v2",
+    "judge_execution_time": 6.3704,
+    "judge_tokens": {
+      "input_tokens": 3753,
+      "output_tokens": 1166,
+      "total_tokens": 4919,
+      "cache_read_tokens": 0,
+      "requests": 1
+    },
+    "judge_cost": 0.00114595,
+    "judge_pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    }
+  },
+  {
+    "question": "How do I make sushi?",
+    "category": "missing-recipe",
+    "type": "not-in-collection",
+    "output": "I don't have a sushi recipe in my collection, so I can't walk you through making sushi from my recipe data.\n\nI did find one Japanese recipe that might interest you as a pairing or alternative:\n\n**Miso Soup** (Japanese, easy)\n- Prep: 5 min, Cook: 10 min, Serves: 4\n- Ingredients: dashi stock, white miso paste, silken tofu, wakame seaweed, green onion\n- Tags: soup, quick, healthy, vegan-adaptable\n\nWould you like the full instructions for the miso soup? It's actually a great accompaniment to homemade sushi if you're attempting it on your own with outside guidance.",
+    "execution_time": 2.7179,
+    "tokens": {
+      "input_tokens": 1593,
+      "output_tokens": 266,
+      "total_tokens": 1859,
+      "cache_read_tokens": 896,
+      "requests": 3
+    },
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "cost": 0.00026443,
+    "pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    },
+    "human_label": "bad",
+    "human_notes": "you can just reject  it if you don;t have a recipe.",
+    "judge_label": "bad",
+    "judge_reasoning": "The response correctly acknowledges that no sushi recipe exists in the collection (satisfying rule 4's first requirement) and accurately offers Miso Soup (id 10) as an existing alternative, with correct cuisine, times, servings, ingredients, and tags. However, it closes with an unsupported pairing claim: \"It's actually a great accompaniment to homemade sushi.\" Rule 4 explicitly states that when a recipe is missing, \"unsupported pairings or outside instructions are not\" acceptable, and rule 2 prohibits adding pairings not supported by the collection. Nothing in the Miso Soup entry (tags: soup, quick, healthy, vegan-adaptable) or any other recipe states it pairs with sushi. This pairing advice, along with encouragement to attempt sushi \"with outside guidance,\" goes beyond the verified recipe data and violates the explicit prohibition.",
+    "agreement": "agree",
+    "judge_model": "accounts/fireworks/models/glm-5p3-flash",
+    "judge_rubric_version": "human-notes-v2",
+    "judge_execution_time": 6.6311,
+    "judge_tokens": {
+      "input_tokens": 3676,
+      "output_tokens": 1180,
+      "total_tokens": 4856,
+      "cache_read_tokens": 0,
+      "requests": 1
+    },
+    "judge_cost": 0.0011414,
+    "judge_pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    }
+  },
+  {
+    "question": "What temperature should I set my oven to for the lava cake?",
+    "category": "recipe-detail",
+    "type": "specific",
+    "output": "For the Chocolate Lava Cake, you should set your oven to **425°F**.\n\nA few tips from the recipe:\n- Bake for **exactly 12-14 minutes** — timing is critical for lava cakes!\n- The **edges should be firm but the center should still be soft** when done\n- Invert onto plates, dust with powdered sugar, and **serve immediately** while the center is still molten\n\nSince it's listed as a \"hard\" difficulty recipe, keep a close eye on the oven during that baking window — even a minute or two too long and you'll lose that gooey center. Enjoy! 🍫",
+    "execution_time": 2.421,
+    "tokens": {
+      "input_tokens": 1824,
+      "output_tokens": 226,
+      "total_tokens": 2050,
+      "cache_read_tokens": 1472,
+      "requests": 3
+    },
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "cost": 0.00020996,
+    "pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    },
+    "human_label": "good",
+    "human_notes": "",
+    "judge_label": "good",
+    "judge_reasoning": "The answer directly and correctly answers the question: the Chocolate Lava Cake recipe (id 9) specifies baking at 425°F, which the agent states. The supporting tips are all verified against the recipe: bake for exactly 12-14 minutes, edges firm but center soft, invert onto plates, dust with powdered sugar, serve immediately. The \"hard\" difficulty label matches the collection. The closing remark about watching the oven during the baking window is a harmless, conversational elaboration consistent with the recipe's emphasis on exact timing (\"exactly 12-14 minutes\") and does not introduce unsupported substitutions, techniques, or material changes to the recipe.",
+    "agreement": "agree",
+    "judge_model": "accounts/fireworks/models/glm-5p3-flash",
+    "judge_rubric_version": "human-notes-v2",
+    "judge_execution_time": 3.8708,
+    "judge_tokens": {
+      "input_tokens": 3671,
+      "output_tokens": 717,
+      "total_tokens": 4388,
+      "cache_read_tokens": 0,
+      "requests": 1
+    },
+    "judge_cost": 0.00090915,
+    "judge_pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    }
+  },
+  {
+    "question": "I want pasta",
+    "category": "preference",
+    "type": "vague",
+    "output": "Great choice! I found a classic pasta recipe for you:\n\n## Spaghetti Carbonara 🍝\n*Italian | Medium difficulty | 10 min prep + 20 min cook | Serves 4*\n\n**Ingredients:**\n- Spaghetti\n- Guanciale\n- Egg yolks\n- Pecorino romano\n- Black pepper\n- Salt\n\n**Instructions:**\n1. Cook spaghetti in salted water\n2. Crisp guanciale in a pan\n3. Whisk egg yolks with grated pecorino and black pepper\n4. Drain pasta, reserving some water\n5. Toss hot pasta with guanciale, then quickly stir in egg mixture **off heat**\n6. Add pasta water as needed for a creamy sauce\n7. Serve immediately with extra pecorino\n\n💡 **Tip:** The key to a silky carbonara is adding the egg mixture off the heat so it doesn't scramble — the residual heat and pasta water create that creamy sauce.\n\nWould you like the full details on this one, or are you looking for a different type of pasta dish?",
+    "execution_time": 3.2908,
+    "tokens": {
+      "input_tokens": 1802,
+      "output_tokens": 358,
+      "total_tokens": 2160,
+      "cache_read_tokens": 1012,
+      "requests": 3
+    },
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "cost": 0.00032786,
+    "pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    },
+    "human_label": "good",
+    "human_notes": "",
+    "judge_label": "good",
+    "judge_reasoning": "The user asked for pasta, and the collection contains exactly one pasta dish: Spaghetti Carbonara (id 6). The answer correctly identifies it as a classic pasta recipe and reproduces the recipe faithfully: ingredients (spaghetti, guanciale, egg yolks, pecorino romano, black pepper, salt), times (10 min prep + 20 min cook), servings (4), cuisine (Italian), and difficulty (medium) all match the collection, and the numbered instructions are a faithful paraphrase of the recipe, including the off-heat egg addition and pasta water for creaminess. The only added content is the tip explaining the off-heat step; this is a brief, accurate elaboration of the recipe's own instructions (\"quickly stir in egg mixture off heat. Add pasta water as needed for a creamy sauce\") rather than an unsupported substitution or advice that changes the dish. No missing-recipe or scope issues arise. The answer directly and correctly addresses the request.",
+    "agreement": "agree",
+    "judge_model": "accounts/fireworks/models/glm-5p3-flash",
+    "judge_rubric_version": "human-notes-v2",
+    "judge_execution_time": 9.0199,
+    "judge_tokens": {
+      "input_tokens": 3763,
+      "output_tokens": 1558,
+      "total_tokens": 5321,
+      "cache_read_tokens": 0,
+      "requests": 1
+    },
+    "judge_cost": 0.00134345,
+    "judge_pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    }
+  },
+  {
+    "question": "What Italian dishes do you have?",
+    "category": "cuisine-search",
+    "type": "filtered",
+    "output": "Here are the Italian dishes in my collection:\n\n1. **Classic Margherita Pizza** — Easy, vegetarian\n   - Prep: 20 min | Cook: 15 min | Serves 4\n   - Made with pizza dough, San Marzano tomatoes, fresh mozzarella, and basil\n\n2. **Spaghetti Carbonara** — Medium difficulty\n   - Prep: 10 min | Cook: 20 min | Serves 4\n   - A classic pasta with guanciale, egg yolks, pecorino romano, and black pepper\n\n3. **Mushroom Risotto** — Medium difficulty, vegetarian\n   - Prep: 10 min | Cook: 35 min | Serves 4\n   - Creamy comfort food with arborio rice, mixed mushrooms, and parmesan\n\nWould you like the full recipe and instructions for any of these?",
+    "execution_time": 1.9168,
+    "tokens": {
+      "input_tokens": 1170,
+      "output_tokens": 241,
+      "total_tokens": 1411,
+      "cache_read_tokens": 912,
+      "requests": 2
+    },
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "cost": 0.00018656,
+    "pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    },
+    "human_label": "good",
+    "human_notes": "",
+    "judge_label": "good",
+    "judge_reasoning": "The response correctly identifies all three Italian dishes in the collection: Classic Margherita Pizza (id 1), Spaghetti Carbonara (id 6), and Mushroom Risotto (id 13). All stated details match the recipes: Margherita Pizza is easy, vegetarian, prep 20/cook 15, serves 4, with pizza dough, San Marzano tomatoes, fresh mozzarella, and basil; Carbonara is medium, prep 10/cook 20, serves 4, with guanciale, egg yolks, pecorino romano, and black pepper (tagged classic/pasta); Mushroom Risotto is medium, vegetarian, prep 10/cook 35, serves 4, with arborio rice, mixed mushrooms, and parmesan (the \"creamy\" and \"comfort food\" descriptors are supported by the recipe instructions and comfort-food tag). No substitutions, unsupported advice, or factual errors were introduced, and the closing question is an appropriate offer of the full recipes.",
+    "agreement": "agree",
+    "judge_model": "accounts/fireworks/models/glm-5p3-flash",
+    "judge_rubric_version": "human-notes-v2",
+    "judge_execution_time": 3.081,
+    "judge_tokens": {
+      "input_tokens": 3715,
+      "output_tokens": 576,
+      "total_tokens": 4291,
+      "cache_read_tokens": 0,
+      "requests": 1
+    },
+    "judge_cost": 0.00084525,
+    "judge_pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    }
+  },
+  {
+    "question": "What can I make with chickpeas?",
+    "category": "ingredient-search",
+    "type": "ingredient-based",
+    "output": "I found a great chickpea recipe in my collection:\n\n## 🥙 Falafel Wrap\n**Middle Eastern | Medium difficulty | 30 min prep + 15 min cook | Serves 4**\n\n**Ingredients:**\n- Chickpeas (dried)\n- Onion, garlic, parsley, cilantro\n- Cumin, coriander\n- Flour, baking powder\n- Pita bread, tahini\n- Lettuce, tomato, pickles\n\n**Instructions:**\n1. Soak dried chickpeas overnight (don't use canned — it makes a difference!)\n2. Blend chickpeas with onion, garlic, herbs, and spices until coarse\n3. Mix in flour and baking powder\n4. Form into balls or patties\n5. Deep fry at 350°F for 3-4 minutes until dark golden\n6. Serve in pita with tahini sauce, lettuce, tomato, and pickles\n\nIt's vegetarian and vegan-friendly, too. 🌱\n\nUnfortunately, that's the only chickpea recipe I currently have. If falafel isn't quite what you're in the mood for, I could also search for something else — for example, a soup, curry, or salad that might pair well with chickpeas. Just let me know!",
+    "execution_time": 3.2907,
+    "tokens": {
+      "input_tokens": 1906,
+      "output_tokens": 387,
+      "total_tokens": 2293,
+      "cache_read_tokens": 0,
+      "requests": 3
+    },
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "cost": 0.0004794,
+    "pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    },
+    "human_label": "good",
+    "human_notes": "",
+    "judge_label": "bad",
+    "judge_reasoning": "The core of the answer is accurate: it correctly identifies the Falafel Wrap (id 15) as the only chickpea recipe, and all details (cuisine, difficulty, 30 min prep + 15 min cook, 4 servings, ingredients, steps, deep-fry temperature/time, and the explicit \"do not use canned\" restriction) match the collection. However, the closing paragraph violates the rubric on unsupported pairings and non-existent alternatives. The agent acknowledges falafel is the only chickpea recipe but then offers to search for \"a soup, curry, or salad that might pair well with chickpeas.\" The collection contains no chickpea soups, curries, or salads (only id 15 uses chickpeas; the soups/curries/salads present — Miso Soup, Thai Green Curry, Greek Salad, Caesar Salad — contain no chickpeas), and no recipe supports any pairing claim. Per rule 4, a \"brief offer of an existing alternative\" is acceptable, but an offer implying the collection might contain chickpea soup/curry/salad recipes is an unsupported pairing, and rule 2 explicitly states leniency for serving suggestions does not override the prohibition on unsupported pairings. Additionally, the parenthetical \"don't use canned — it makes a difference!\" adds a vague invented explanation for the recipe's explicit prohibition, whereas the rubric requires stating the prohibition without inventing explanations. Label: bad.",
+    "agreement": "disagree",
+    "judge_model": "accounts/fireworks/models/glm-5p3-flash",
+    "judge_rubric_version": "human-notes-v2",
+    "judge_execution_time": 14.5762,
+    "judge_tokens": {
+      "input_tokens": 3811,
+      "output_tokens": 2847,
+      "total_tokens": 6658,
+      "cache_read_tokens": 0,
+      "requests": 1
+    },
+    "judge_cost": 0.00199515,
+    "judge_pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    }
+  },
+  {
+    "question": "Can I use bacon instead of guanciale in carbonara?",
+    "category": "unsupported-advice",
+    "type": "substitution",
+    "output": "Yes, you can! Bacon is a common and practical substitute for guanciale in carbonara. A few notes on how it affects the dish:\n\n- **Flavor**: Guanciale (cured pork jowl) has a richer, more delicate, slightly sweeter flavor than bacon, which is smoked and saltier. Your carbonara will taste a bit smokier with bacon.\n- **Fat rendering**: Both render nicely, but bacon can release more liquid. Render it slowly over medium heat until crisp, then drain off excess fat if needed before tossing with the pasta.\n- **Seasoning**: Since bacon is saltier, taste before adding extra salt to the dish.\n\nFor best results with the classic method (crisp the pork, toss hot pasta with it, then stir in the egg-pecorino mixture off the heat), bacon works perfectly fine — just expect a slightly smokier, more familiar flavor than the traditional Roman version.\n\nIf you ever want to get closer to the authentic taste, **pancetta** (unsmoked Italian cured pork belly) is a middle-ground substitute — less smoky than bacon but more available than guanciale. Would you like the full Spaghetti Carbonara recipe from our collection?",
+    "execution_time": 3.8958,
+    "tokens": {
+      "input_tokens": 2065,
+      "output_tokens": 498,
+      "total_tokens": 2563,
+      "cache_read_tokens": 1140,
+      "requests": 3
+    },
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "cost": 0.00042195,
+    "pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    },
+    "human_label": "bad",
+    "human_notes": "Stick to what recipes say are true.",
+    "judge_label": "bad",
+    "judge_reasoning": "The response directly violates rule 1: it recommends and extensively explains the bacon-for-guanciale substitution, which is absent from the collection. The Carbonara recipe (id 6) lists only guanciale and provides no substitution guidance, yet the answer asserts bacon \"works perfectly fine,\" invents effects (guanciale's sweeter flavor vs. smokier/saltier bacon, bacon releasing more liquid, draining excess fat, tasting before adding extra salt), and additionally proposes pancetta as a \"middle-ground substitute\" — all unsupported outside cooking knowledge (also violating rule 2). The correct behavior was to state that the recipe calls for guanciale and that substitution guidance is unavailable in the collection, not to endorse the swap with invented ratios, effects, and techniques.",
+    "agreement": "agree",
+    "judge_model": "accounts/fireworks/models/glm-5p3-flash",
+    "judge_rubric_version": "human-notes-v2",
+    "judge_execution_time": 2.7132,
+    "judge_tokens": {
+      "input_tokens": 3792,
+      "output_tokens": 436,
+      "total_tokens": 4228,
+      "cache_read_tokens": 0,
+      "requests": 1
+    },
+    "judge_cost": 0.0007868,
+    "judge_pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    }
+  },
+  {
+    "question": "Can I replace the eggs in banana pancakes with applesauce?",
+    "category": "unsupported-advice",
+    "type": "substitution",
+    "output": "Yes, you can! Applesauce is a common egg substitute in baking. Here's how it would work with our Banana Pancakes recipe (recipe #11), which calls for eggs along with ripe bananas, flour, baking powder, milk, butter, and vanilla:\n\n**The substitution:**\n- Use **1/4 cup unsweetened applesauce per egg** called for in the recipe.\n\n**What to expect:**\n- Applesauce works as a **binder**, so the pancakes will hold together fine.\n- However, eggs also add structure and lift, so applesauce-only pancakes tend to be **a bit denser and more delicate** — flip them gently!\n- You may notice a subtle apple flavor, though the banana and vanilla will mostly cover it.\n\n**Good news for this particular recipe:** Since it already uses mashed bananas, which provide plenty of moisture and natural binding on their own, the applesauce swap should work especially smoothly here. The batter may be slightly wetter, so let it rest a minute or two before cooking, and keep the heat at medium so the pancakes set properly before flipping.\n\nWould you like me to look up any other recipes with egg-free options?",
+    "execution_time": 4.0652,
+    "tokens": {
+      "input_tokens": 1882,
+      "output_tokens": 494,
+      "total_tokens": 2376,
+      "cache_read_tokens": 1408,
+      "requests": 3
+    },
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "cost": 0.00036034,
+    "pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    },
+    "human_label": "bad",
+    "human_notes": "Do not mention substituions stick to the knowledge you know to be good and true",
+    "judge_label": "bad",
+    "judge_reasoning": "The response recommends the applesauce-for-eggs swap with a specific ratio (1/4 cup per egg) and detailed effects (binder, denser texture, apple flavor, resting batter, medium heat). The Banana Pancakes recipe (id 11) contains eggs with no substitution guidance, and the collection offers no egg-free pancake alternative. The rubric explicitly names \"applesauce for eggs\" as a prohibited unsupported substitution, and the invented ratio and predicted outcomes violate rules 1 and 2. The correct answer should acknowledge that the recipe/collection provides no egg-substitution guidance and that no egg-free pancake recipe is available, rather than inventing ratios, effects, and techniques.",
+    "agreement": "agree",
+    "judge_model": "accounts/fireworks/models/glm-5p3-flash",
+    "judge_rubric_version": "human-notes-v2",
+    "judge_execution_time": 2.4536,
+    "judge_tokens": {
+      "input_tokens": 3785,
+      "output_tokens": 400,
+      "total_tokens": 4185,
+      "cache_read_tokens": 256,
+      "requests": 1
+    },
+    "judge_cost": 0.00073703,
+    "judge_pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    }
+  },
+  {
+    "question": "Is the Caesar salad vegetarian?",
+    "category": "dietary-question",
+    "type": "ingredient-check",
+    "output": "No, the Caesar Salad in our collection is **not vegetarian**. Its ingredients include:\n\n- **Anchovy paste** (a fish product — this is the main issue)\n- **Egg yolk** (in the Caesar dressing, which some vegetarians avoid)\n- **Parmesan cheese** (traditional parmesan uses animal rennet, a concern for strict vegetarians)\n\nThe anchovies are what make it definitively non-vegetarian — they're a classic component of authentic Caesar dressing.\n\nIf you're looking for a vegetarian salad instead, our **Greek Salad** is tagged vegetarian, made with cucumber, tomato, red onion, Kalamata olives, feta, and a simple olive oil and red wine vinegar dressing. Would you like the full recipe?",
+    "execution_time": 2.3647,
+    "tokens": {
+      "input_tokens": 1118,
+      "output_tokens": 290,
+      "total_tokens": 1408,
+      "cache_read_tokens": 896,
+      "requests": 2
+    },
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "cost": 0.00020518,
+    "pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    },
+    "human_label": "good",
+    "human_notes": "",
+    "judge_label": "good",
+    "judge_reasoning": "The core answer is correct and directly supported by the collection: the Caesar Salad (id 3) lists anchovy paste among its ingredients and carries no vegetarian tag, so \"no, it is not vegetarian\" is the right determination, with anchovy paste correctly identified as the disqualifying ingredient. The offered alternative, the Greek Salad (id 8), is indeed tagged vegetarian and its described ingredients (cucumber, tomato, red onion, Kalamata olives, feta, olive oil, red wine vinegar dressing) match the recipe — a brief, valid alternative offer consistent with rule 4. The additional hedged notes that some vegetarians avoid egg yolk and that traditional parmesan may involve animal rennet are brief, accurate background elaborations that do not contradict the recipe, invent substitutions, change any steps, or mislead; the answer explicitly keeps anchovy paste as the definitive reason. No factual errors, contradictions, or unsupported cooking techniques are present.",
+    "agreement": "agree",
+    "judge_model": "accounts/fireworks/models/glm-5p3-flash",
+    "judge_rubric_version": "human-notes-v2",
+    "judge_execution_time": 10.8098,
+    "judge_tokens": {
+      "input_tokens": 3691,
+      "output_tokens": 2044,
+      "total_tokens": 5735,
+      "cache_read_tokens": 256,
+      "requests": 1
+    },
+    "judge_cost": 0.00154493,
+    "judge_pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    }
+  },
+  {
+    "question": "What vegan recipes do you have?",
+    "category": "dietary-preference",
+    "type": "filtered",
+    "output": "Here are the vegan recipes in my collection:\n\n## 🌱 Vegan Recipes\n\n**1. Vegetable Stir Fry** (Chinese, easy)\n- ⏱️ Prep: 15 min | Cook: 10 min | Serves: 3\n- Broccoli, bell pepper, carrot, snap peas, soy sauce, sesame oil, garlic, ginger, cornstarch, served over rice\n- Quick, healthy, and ready in 25 minutes!\n\n**2. Falafel Wrap** (Middle Eastern, medium)\n- ⏱️ Prep: 30 min | Cook: 15 min | Serves: 4\n- Chickpeas, onion, garlic, fresh herbs, spices, wrapped in pita with tahini, lettuce, tomato, and pickles\n- A flavorful street-food classic\n\n**3. Miso Soup** (Japanese, easy) — *vegan-adaptable*\n- ⏱️ Prep: 5 min | Cook: 10 min | Serves: 4\n- White miso paste, silken tofu, wakame seaweed, green onion\n- Note: this one is tagged \"vegan-adaptable\" — you'd want to use a vegan dashi (like kombu-based) instead of traditional bonito dashi\n\nWould you like the full instructions for any of these?",
+    "execution_time": 2.5292,
+    "tokens": {
+      "input_tokens": 1190,
+      "output_tokens": 367,
+      "total_tokens": 1557,
+      "cache_read_tokens": 912,
+      "requests": 2
+    },
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "cost": 0.00025256,
+    "pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    },
+    "human_label": "good",
+    "human_notes": "",
+    "judge_label": "bad",
+    "judge_reasoning": "The answer correctly identifies the two vegan-tagged recipes (Vegetable Stir Fry and Falafel Wrap) with accurate prep/cook times, servings, and ingredients, and properly labels Miso Soup as \"vegan-adaptable\" rather than fully vegan, matching its tag. However, the Miso Soup note violates the substitution/explanation rules: the agent recommends a specific swap (\"use a vegan dashi (like kombu-based) instead of traditional bonito dashi\") and asserts that traditional dashi is bonito-based. The collection only lists \"dashi stock\" as an ingredient and tags the recipe \"vegan-adaptable\" without specifying how to adapt it; the kombu swap and the bonito ingredient-property claim are invented outside knowledge. Per rules 1 and 2, the agent should have acknowledged that the collection doesn't provide substitution guidance rather than recommending a swap absent from the recipe. The rest of the answer is accurate, but the unsupported substitution advice makes it non-compliant.",
+    "agreement": "disagree",
+    "judge_model": "accounts/fireworks/models/glm-5p3-flash",
+    "judge_rubric_version": "human-notes-v2",
+    "judge_execution_time": 12.9291,
+    "judge_tokens": {
+      "input_tokens": 3815,
+      "output_tokens": 2508,
+      "total_tokens": 6323,
+      "cache_read_tokens": 3456,
+      "requests": 1
+    },
+    "judge_cost": 0.00141153,
+    "judge_pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    }
+  },
+  {
+    "question": "What's the calorie count for the chocolate lava cake?",
+    "category": "unsupported-advice",
+    "type": "nutrition",
+    "output": "I found the Chocolate Lava Cake recipe in our collection, but unfortunately it doesn't include nutritional information like calorie counts. The recipe data only contains:\n\n- **Ingredients**: dark chocolate, butter, eggs, sugar, flour, vanilla extract, powdered sugar\n- **Servings**: 4\n- **Time**: 20 min prep, 14 min cook\n- **Instructions** for baking\n\nIf you'd like a rough estimate, you could calculate it based on the ingredient quantities you use — chocolate, butter, and sugar are the main calorie contributors in this type of dessert. But I don't want to guess at exact numbers since I don't have the specific quantities in the recipe data.\n\nIs there anything else about this recipe I can help you with?",
+    "execution_time": 2.6145,
+    "tokens": {
+      "input_tokens": 1802,
+      "output_tokens": 236,
+      "total_tokens": 2038,
+      "cache_read_tokens": 1428,
+      "requests": 3
+    },
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "cost": 0.00021694,
+    "pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    },
+    "human_label": "good",
+    "human_notes": "",
+    "judge_label": "good",
+    "judge_reasoning": "The user asked for the calorie count of the chocolate lava cake. The collection contains the recipe (id 9) but includes no nutritional data, and the agent correctly acknowledged this rather than inventing numbers — exactly what the rubric requires for missing nutrition. The details it cited (ingredients: dark chocolate, butter, eggs, sugar, flour, vanilla extract, powdered sugar; 4 servings; 20 min prep / 14 min cook) all match recipe 9. It also appropriately declined to estimate since the recipe provides no quantities. The only extra content — noting chocolate, butter, and sugar are the main calorie contributors — is a brief, accurate background remark used to justify not guessing, not a fabricated number, substitution, or material change to the recipe, so it doesn't rise to a disqualifying error. The answer directly and correctly addresses the request within the collection's limits.",
+    "agreement": "agree",
+    "judge_model": "accounts/fireworks/models/glm-5p3-flash",
+    "judge_rubric_version": "human-notes-v2",
+    "judge_execution_time": 12.3677,
+    "judge_tokens": {
+      "input_tokens": 3689,
+      "output_tokens": 2251,
+      "total_tokens": 5940,
+      "cache_read_tokens": 3456,
+      "requests": 1
+    },
+    "judge_cost": 0.00126413,
+    "judge_pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    }
+  },
+  {
+    "question": "How do I make ramen?",
+    "category": "missing-recipe",
+    "type": "not-in-collection",
+    "output": "I'm sorry, but I don't have a ramen recipe in my collection — I searched for ramen and noodle dishes and came up empty.\n\nThe closest thing I found is a **Miso Soup (Japanese, easy)**:\n- **Prep:** 5 min | **Cook:** 10 min | **Serves:** 4\n- **Ingredients:** dashi stock, white miso paste, silken tofu, wakame seaweed, green onion\n- **Tags:** soup, quick, healthy, vegan-adaptable\n\nWould you like the full instructions for the miso soup? It's not ramen, but it's a quick and comforting Japanese soup. If you're set on making ramen specifically, I'd recommend checking a site dedicated to it, since I can't provide a reliable recipe for it from my collection.",
+    "execution_time": 3.632,
+    "tokens": {
+      "input_tokens": 2371,
+      "output_tokens": 451,
+      "total_tokens": 2822,
+      "cache_read_tokens": 0,
+      "requests": 4
+    },
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "cost": 0.00058115,
+    "pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    },
+    "human_label": "good",
+    "human_notes": "",
+    "judge_label": "good",
+    "judge_reasoning": "The collection contains no ramen recipe, and the agent correctly acknowledged this rather than inventing one. Its alternative offer (Miso Soup, id 10) is accurate to the collection: prep 5 min, cook 10 min, serves 4, ingredients (dashi stock, white miso paste, silken tofu, wakame seaweed, green onion), and tags (soup, quick, healthy, vegan-adaptable). It explicitly stated the soup is not ramen, avoided unsupported ramen instructions, and offered to share the full recipe. This matches rule 4: clearly acknowledge the unavailable recipe, with a brief, accurate alternative offer and no outside instructions.",
+    "agreement": "agree",
+    "judge_model": "accounts/fireworks/models/glm-5p3-flash",
+    "judge_rubric_version": "human-notes-v2",
+    "judge_execution_time": 2.609,
+    "judge_tokens": {
+      "input_tokens": 3705,
+      "output_tokens": 346,
+      "total_tokens": 4051,
+      "cache_read_tokens": 3456,
+      "requests": 1
+    },
+    "judge_cost": 0.00031403,
+    "judge_pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    }
+  },
+  {
+    "question": "What's the best restaurant in town?",
+    "category": "out-of-scope",
+    "type": "restaurant-recommendation",
+    "output": "I'm a recipe assistant, so I don't have information about local restaurants — I can't recommend dining spots in your area.\n\nWhat I *can* help with is finding recipes to cook at home! If you're craving a particular type of food (Italian, Thai, comfort food, desserts, etc.), just let me know and I can search my recipe collection for you. Maybe you'll find something delicious enough that you won't need to eat out! 🍳",
+    "execution_time": 1.2478,
+    "tokens": {
+      "input_tokens": 466,
+      "output_tokens": 162,
+      "total_tokens": 628,
+      "cache_read_tokens": 448,
+      "requests": 1
+    },
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "cost": 9.714e-05,
+    "pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    },
+    "human_label": "good",
+    "human_notes": "",
+    "judge_label": "good",
+    "judge_reasoning": "The question about restaurant recommendations is out of scope, and the agent correctly declined per the rubric. It did not provide any substantive out-of-scope advice (no restaurant names, ratings, or dining suggestions). Instead, it briefly offered an in-scope alternative — searching its recipe collection for home cooking — which is acceptable. The closing remark about not needing to eat out is harmless conversational language, not advice or an unsupported claim.",
+    "agreement": "agree",
+    "judge_model": "accounts/fireworks/models/glm-5p3-flash",
+    "judge_rubric_version": "human-notes-v2",
+    "judge_execution_time": 2.1153,
+    "judge_tokens": {
+      "input_tokens": 3625,
+      "output_tokens": 307,
+      "total_tokens": 3932,
+      "cache_read_tokens": 3456,
+      "requests": 1
+    },
+    "judge_cost": 0.00028253,
+    "judge_pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    }
+  },
+  {
+    "question": "How do I fix my dishwasher?",
+    "category": "out-of-scope",
+    "type": "non-cooking",
+    "output": "I'm a recipe assistant, so appliance repair is a bit outside my wheelhouse! I can help you find recipes, get cooking instructions, or answer questions about ingredients and cooking techniques.\n\nFor dishwasher repair, I'd suggest:\n- **Checking the manual** for troubleshooting steps\n- **Common quick fixes**: cleaning the filter, checking the spray arms for clogs, and making sure the door latch is secure\n- **Online resources** like the manufacturer's website or appliance repair tutorials\n\nIn the meantime, if you'd like to cook up something delicious while the dishes pile up, I'm happy to help! 😄 Is there a recipe I can find for you?",
+    "execution_time": 1.5125,
+    "tokens": {
+      "input_tokens": 465,
+      "output_tokens": 191,
+      "total_tokens": 656,
+      "cache_read_tokens": 448,
+      "requests": 1
+    },
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "cost": 0.00011149,
+    "pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    },
+    "human_label": "good",
+    "human_notes": "",
+    "judge_label": "bad",
+    "judge_reasoning": "The question (dishwasher repair) is out of scope for a recipe assistant, and the correct behavior per the rubric is to decline without following up with substantive repair advice. The agent response correctly begins by acknowledging it's a recipe assistant and that appliance repair is out of scope, but it then proceeds to give concrete dishwasher troubleshooting tips (cleaning the filter, checking spray arms for clogs, verifying the door latch, consulting the manual or manufacturer website). This violates the rule against following a refusal with substantive out-of-scope advice. No recipe in the collection supports any appliance repair guidance, and none is offered with appropriate sourcing. The proper response would be a brief, friendly decline redirecting to recipe help, with no repair instructions.",
+    "agreement": "disagree",
+    "judge_model": "accounts/fireworks/models/glm-5p3-flash",
+    "judge_rubric_version": "human-notes-v2",
+    "judge_execution_time": 1.9435,
+    "judge_tokens": {
+      "input_tokens": 3665,
+      "output_tokens": 306,
+      "total_tokens": 3971,
+      "cache_read_tokens": 3456,
+      "requests": 1
+    },
+    "judge_cost": 0.00028803,
+    "judge_pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    }
+  },
+  {
+    "question": "Can I make the falafel with canned chickpeas?",
+    "category": "recipe-detail",
+    "type": "explicit-restriction",
+    "output": "The recipe for the Falafel Wrap (recipe #15) explicitly calls for **dried chickpeas, not canned** — the instructions say to soak dried chickpeas overnight and note \"(do not use canned).\"\n\nThe reason for this is that canned chickpeas are already cooked and soft, which makes the falafel mixture too wet and mushy — the patties tend to fall apart when fried. Soaked (but uncooked) dried chickpeas give the mixture the right texture and binding.\n\nSo while you *could* technically try it with canned chickpeas, you'd be going against the recipe's instructions, and the results would likely be disappointing. If you want to make this recipe, plan ahead for the overnight soak — the prep time listed (30 minutes) doesn't include that soaking step.\n\nIs there anything else you'd like to know about this recipe?",
+    "execution_time": 3.698,
+    "tokens": {
+      "input_tokens": 1926,
+      "output_tokens": 493,
+      "total_tokens": 2419,
+      "cache_read_tokens": 1524,
+      "requests": 3
+    },
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "cost": 0.00035252,
+    "pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    },
+    "human_label": "bad",
+    "human_notes": "do mention substitions stiuck to your recipes",
+    "judge_label": "bad",
+    "judge_reasoning": "The answer correctly states the recipe's explicit rule — \"Soak dried chickpeas overnight (do not use canned)\" — and the note about the 30-minute prep time excluding the overnight soak is a valid observation. However, it violates the falafel-specific restriction in rule 2, which requires stating the prohibition \"without inventing explanations or suggesting canned chickpeas might work.\" The response does both: (1) it invents an unsupported explanation that canned chickpeas are \"already cooked and soft, which makes the falafel mixture too wet and mushy — the patties tend to fall apart when fried\" and that dried chickpeas provide \"the right texture and binding\" — none of this texture/binding rationale appears in the recipe collection; (2) it tells the user they \"could technically try it with canned chickpeas,\" directly suggesting canned chickpeas might work despite the recipe's explicit prohibition. The correct answer is simply to affirm the recipe requires dried, soaked chickpeas and cannot be made with canned ones, without adding fabricated reasons or hedged permission to try.",
+    "agreement": "agree",
+    "judge_model": "accounts/fireworks/models/glm-5p3-flash",
+    "judge_rubric_version": "human-notes-v2",
+    "judge_execution_time": 4.116,
+    "judge_tokens": {
+      "input_tokens": 3721,
+      "output_tokens": 765,
+      "total_tokens": 4486,
+      "cache_read_tokens": 3456,
+      "requests": 1
+    },
+    "judge_cost": 0.00052593,
+    "judge_pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    }
+  },
+  {
+    "question": "Do I stir in the carbonara egg mixture while the pan is on the heat?",
+    "category": "recipe-detail",
+    "type": "technique",
+    "output": "No — according to this Spaghetti Carbonara recipe, you should stir in the egg mixture **off the heat**. Here's the sequence:\n\n1. Toss the hot, drained pasta with the crispy guanciale\n2. Quickly stir in the egg mixture (egg yolks whisked with pecorino and black pepper) **off heat**\n3. Add reserved pasta water as needed to create a creamy sauce\n\nKeeping the pan off the heat at this step is key — the residual heat from the pasta is enough to cook the eggs into a silky sauce. If the pan is still on the burner, the eggs can scramble and you'll end up with bits of cooked egg instead of a smooth, creamy sauce. Serve it immediately with extra pecorino!",
+    "execution_time": 2.7484,
+    "tokens": {
+      "input_tokens": 1897,
+      "output_tokens": 280,
+      "total_tokens": 2177,
+      "cache_read_tokens": 1524,
+      "requests": 3
+    },
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "cost": 0.00024167,
+    "pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    },
+    "human_label": "good",
+    "human_notes": "",
+    "judge_label": "bad",
+    "judge_reasoning": "The core answer is correct: recipe #6 (Spaghetti Carbonara) instructs to \"toss hot pasta with guanciale, then quickly stir in egg mixture off heat,\" and the agent accurately restates this sequence along with adding reserved pasta water and serving with extra pecorino. However, the agent then appends unsupported explanation: \"the residual heat from the pasta is enough to cook the eggs into a silky sauce. If the pan is still on the burner, the eggs can scramble and you'll end up with bits of cooked egg instead of a smooth, creamy sauce.\" This rationale about residual heat cooking the eggs and scrambling risk appears nowhere in the recipe collection. Under rule 2, unsupported cooking explanations and technique reasoning are prohibited, and the leniency for brief background explanations does not override that rule. The correct response should simply confirm the off-heat instruction per the recipe without inventing the \"why.\"",
+    "agreement": "disagree",
+    "judge_model": "accounts/fireworks/models/glm-5p3-flash",
+    "judge_rubric_version": "human-notes-v2",
+    "judge_execution_time": 6.2472,
+    "judge_max_tokens": 8192,
+    "judge_tokens": {
+      "input_tokens": 3696,
+      "output_tokens": 1151,
+      "total_tokens": 4847,
+      "cache_read_tokens": 3648,
+      "requests": 1
+    },
+    "judge_cost": 0.00069214,
+    "judge_pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    }
+  },
+  {
+    "question": "I need dinner without turning on the stove",
+    "category": "preference",
+    "type": "no-cook",
+    "output": "Here are two dinner options that never touch the stove:\n\n## 🥗 Greek Salad *(my top pick)*\n**10 minutes | Serves 4 | Vegetarian & Healthy**\n\n**Ingredients:** cucumber, tomato, red onion, Kalamata olives, feta cheese, olive oil, oregano, red wine vinegar\n\n**Instructions:**\n1. Chop cucumber, tomatoes, and red onion into chunks\n2. Combine in a bowl\n3. Add Kalamata olives and crumbled feta\n4. Dress with olive oil, red wine vinegar, and oregano\n5. Toss gently and let sit 5 minutes before serving\n\n## 🥬 Caesar Salad\n**15 minutes | Serves 2**\n\n**Ingredients:** romaine lettuce, parmesan cheese, croutons, lemon juice, anchovy paste, garlic, olive oil, egg yolk\n\n**Instructions:**\n1. Wash and chop romaine lettuce\n2. Make dressing: whisk egg yolk, anchovy paste, garlic, lemon juice, and olive oil\n3. Toss lettuce with dressing\n4. Top with shaved parmesan and croutons\n\n**A note:** the Caesar's homemade dressing uses a raw egg yolk, so the Greek Salad is the safer/easier choice if that's a concern. If you'd like something heartier, you could serve either with store-bought bread, rotisserie chicken, or canned beans — no stove required! Want the full quantities for either recipe?",
+    "execution_time": 4.2664,
+    "tokens": {
+      "input_tokens": 2853,
+      "output_tokens": 561,
+      "total_tokens": 3414,
+      "cache_read_tokens": 1856,
+      "requests": 3
+    },
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "cost": 0.00048573,
+    "pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    },
+    "human_label": "good",
+    "human_notes": "",
+    "judge_label": "good",
+    "judge_reasoning": "The user asked for dinner without using the stove. The answer correctly identifies the only two recipes in the collection with no cooking (Greek Salad, id 8, cook_time 0, tagged no-cook; Caesar Salad, id 3, cook_time 0) and presents them accurately: Greek Salad (10 min, serves 4, vegetarian/healthy) and Caesar Salad (15 min, serves 2) with ingredient lists and step sequences matching the recipes, including \"let sit 5 minutes\" for the Greek Salad and the raw-egg-yolk dressing whisked off-heat for the Caesar. The closing notes are hedged elaborations rather than errors: the observation that the Caesar dressing contains a raw egg yolk is directly grounded in the recipe (egg yolk whisked uncooked into dressing), and the suggestion of no-cook accompaniments like store-bought bread or rotisserie chicken is explicitly optional and does not alter or misrepresent either recipe. Minor omissions (e.g., not repeating the redundant \"Caesar dressing\" line item, since the recipe's own instructions build the dressing from the listed components) are harmless. No factual errors, contradictions, unsupported substitutions, or fabricated recipe facts.",
+    "agreement": "agree",
+    "judge_model": "accounts/fireworks/models/glm-5p3-flash",
+    "judge_rubric_version": "human-notes-v2",
+    "judge_execution_time": 23.6249,
+    "judge_max_tokens": 8192,
+    "judge_tokens": {
+      "input_tokens": 3856,
+      "output_tokens": 4180,
+      "total_tokens": 8036,
+      "cache_read_tokens": 3456,
+      "requests": 1
+    },
+    "judge_cost": 0.00225368,
+    "judge_pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    }
+  },
+  {
+    "question": "How many people does the mushroom risotto serve?",
+    "category": "recipe-detail",
+    "type": "servings",
+    "output": "The Mushroom Risotto serves **4 people**. It's an Italian dish with a 10-minute prep time and 35-minute cook time. If you're cooking for a different group size, the quantities can easily be scaled up or down — just let me know if you'd like the full recipe details!",
+    "execution_time": 1.5022,
+    "tokens": {
+      "input_tokens": 1069,
+      "output_tokens": 153,
+      "total_tokens": 1222,
+      "cache_read_tokens": 896,
+      "requests": 2
+    },
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "cost": 0.00012933,
+    "pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    },
+    "human_label": "good",
+    "human_notes": "",
+    "judge_label": "good",
+    "judge_reasoning": "The answer correctly states that the Mushroom Risotto serves 4 people, matching recipe id 13 (servings: 4). The supporting details (Italian cuisine, 10-minute prep time, 35-minute cook time) are all verified against the collection. The closing offer to share the full recipe or discuss scaling is conversational, contains no invented substitutions, unsupported techniques, or factual errors, and does not change the recipe. The user's specific question is directly and accurately answered.",
+    "agreement": "agree",
+    "judge_model": "accounts/fireworks/models/glm-5p3-flash",
+    "judge_rubric_version": "human-notes-v2",
+    "judge_execution_time": 1.7998,
+    "judge_max_tokens": 8192,
+    "judge_tokens": {
+      "input_tokens": 3592,
+      "output_tokens": 262,
+      "total_tokens": 3854,
+      "cache_read_tokens": 3456,
+      "requests": 1
+    },
+    "judge_cost": 0.00025508,
+    "judge_pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    }
+  },
+  {
+    "question": "Can I substitute almond milk in the pancakes?",
+    "category": "unsupported-advice",
+    "type": "substitution",
+    "output": "Yes! In these **Banana Pancakes**, the milk is simply whisked into the wet ingredients with the mashed bananas, eggs, and vanilla — so it's an easy swap.\n\n**Tips for substituting almond milk:**\n- Use a **1:1 ratio** — same amount of almond milk as the recipe calls for in regular milk.\n- **Unsweetened almond milk** is best, especially since the bananas and maple syrup already add sweetness. If you only have sweetened/vanilla varieties, they'll work too but may make the pancakes slightly sweeter.\n- Since almond milk is thinner and less rich than dairy milk, the batter may be a touch looser — that's fine, but if it seems too thin, you can let it rest a few minutes (the flour will hydrate) before cooking.\n- Everything else stays the same: cook over medium heat in butter until bubbles form on the surface, then flip.\n\nThe bananas add plenty of moisture and flavor, so you shouldn't miss the dairy at all. Enjoy!",
+    "execution_time": 3.8782,
+    "tokens": {
+      "input_tokens": 1921,
+      "output_tokens": 406,
+      "total_tokens": 2327,
+      "cache_read_tokens": 1472,
+      "requests": 3
+    },
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "cost": 0.00031451,
+    "pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    },
+    "human_label": "bad",
+    "human_notes": "do not mention substitutions",
+    "judge_label": "bad",
+    "judge_reasoning": "The response recommends and explains an almond milk–for–milk substitution that is absent from the Banana Pancakes recipe, which the rubric explicitly names as a prohibited swap. It invents unsupported specifics: a \"1:1 ratio,\" claims that unsweetened almond milk is \"best,\" assertions about almond milk's properties (\"thinner and less rich than dairy milk\"), effects on batter consistency (\"may be a touch looser\"), and a technique (\"let it rest a few minutes — the flour will hydrate\"). None of this guidance exists in the recipe collection. Per rule 1, the correct approach is to acknowledge that the recipe provides no substitution guidance rather than inventing ratios, effects, or techniques; per rule 2, the added ingredient-property claims and resting advice are unsupported outside cooking knowledge. The factual recipe summary (milk whisked with bananas, eggs, vanilla; cook in butter over medium heat until bubbles form, flip) is accurate, but the core of the answer — the substitution recommendation and its explanation — violates the rubric.",
+    "agreement": "agree",
+    "judge_model": "accounts/fireworks/models/glm-5p3-flash",
+    "judge_rubric_version": "human-notes-v2",
+    "judge_execution_time": 3.1435,
+    "judge_max_tokens": 8192,
+    "judge_tokens": {
+      "input_tokens": 3748,
+      "output_tokens": 499,
+      "total_tokens": 4247,
+      "cache_read_tokens": 3456,
+      "requests": 1
+    },
+    "judge_cost": 0.00039698,
+    "judge_pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    }
+  }
+]

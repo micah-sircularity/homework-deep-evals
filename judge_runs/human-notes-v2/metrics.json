@@ -1,0 +1,40 @@
+{
+  "rubric_version": "human-notes-v2",
+  "metrics": {
+    "tp": 6,
+    "fp": 4,
+    "fn": 0,
+    "tn": 11,
+    "total": 21,
+    "unlabeled": 0,
+    "disagreements": 4,
+    "accuracy": 0.8095238095238095,
+    "precision": 0.6,
+    "recall": 1.0
+  },
+  "input_sha256": "a3031ae379009c75ca69a2e4d8e6d55d45592473bc84229bcb366b9b45ecd9ef",
+  "prompt_sha256": "2ebad5571ee3ce423af7ba5b061dd07ec3da4d4805bb8f7d25aa8d1d675be0bd",
+  "recipes_sha256": "593a56e1316688bb84214e1070b17a8b0f5408a90899ff21f5d0e1877776e84e",
+  "results_path": "judge_runs/human-notes-v2/results_judged.json",
+  "html_path": "judge_runs/human-notes-v2/results_judged.html",
+  "judge_model": "accounts/fireworks/models/glm-5p3-flash",
+  "execution_notes": {
+    "initial_max_tokens": 4096,
+    "resume_max_tokens": 8192,
+    "completed_before_resume": 17,
+    "failed_question": "Do I stir in the carbonara egg mixture while the pan is on the heat?",
+    "failure": "Model token limit (4096) exceeded before structured response",
+    "failed_call_usage": null,
+    "failed_call_cost_usd": null,
+    "cost_note": "Reported totals include successful evaluations only; failed call cost is unknown and excluded."
+  },
+  "judge_cost_usd": 0.02192167,
+  "judge_execution_time": 160.053,
+  "judge_tokens": {
+    "input_tokens": 78389,
+    "output_tokens": 28790,
+    "total_tokens": 107179,
+    "cache_read_tokens": 35264,
+    "requests": 21
+  }
+}

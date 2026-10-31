@@ -1,0 +1,10 @@
+{
+  "initial_max_tokens": 4096,
+  "resume_max_tokens": 8192,
+  "completed_before_resume": 17,
+  "failed_question": "Do I stir in the carbonara egg mixture while the pan is on the heat?",
+  "failure": "Model token limit (4096) exceeded before structured response",
+  "failed_call_usage": null,
+  "failed_call_cost_usd": null,
+  "cost_note": "Reported totals include successful evaluations only; failed call cost is unknown and excluded."
+}

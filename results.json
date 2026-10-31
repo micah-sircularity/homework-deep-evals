@@ -1,0 +1,527 @@
+[
+  {
+    "question": "How do I make spaghetti carbonara?",
+    "category": "specific-recipe",
+    "type": "direct",
+    "output": "Here's a classic Spaghetti Carbonara recipe for you:\n\n## Spaghetti Carbonara 🍝\n**Italian | Medium difficulty | Prep: 10 min | Cook: 20 min | Serves: 4**\n\n### Ingredients:\n- Spaghetti\n- Guanciale (cured pork cheek)\n- Egg yolks\n- Pecorino Romano cheese\n- Black pepper\n- Salt\n\n### Instructions:\n1. **Cook the pasta** – Boil spaghetti in salted water.\n2. **Crisp the guanciale** – Render it in a pan until crispy.\n3. **Make the egg mixture** – Whisk egg yolks with grated pecorino and black pepper.\n4. **Combine** – Drain the pasta, reserving some pasta water. Toss the hot pasta with the guanciale, then quickly stir in the egg mixture **off the heat** (this is key to avoid scrambling the eggs!).\n5. **Adjust the sauce** – Add reserved pasta water as needed until you get a silky, creamy sauce.\n6. **Serve** – Immediately, topped with extra pecorino.\n\n**Pro tip:** The heat control is everything with carbonara — tossing the egg mixture in off-heat keeps the sauce creamy rather than eggy. Would you like any other pasta recipes or tips?",
+    "execution_time": 3.9854,
+    "tokens": {
+      "input_tokens": 1800,
+      "output_tokens": 367,
+      "total_tokens": 2167,
+      "cache_read_tokens": 1408,
+      "requests": 3
+    },
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "cost": 0.00028454,
+    "pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    }
+  },
+  {
+    "question": "What can I cook with chicken and coconut milk?",
+    "category": "ingredient-search",
+    "type": "ingredient-based",
+    "output": "Here's a perfect match for your ingredients:\n\n## 🍛 Thai Green Curry\n- **Cuisine:** Thai | **Difficulty:** Medium\n- **Prep:** 20 min | **Cook:** 25 min | **Serves:** 4\n- **Tags:** spicy, coconut\n\n### Ingredients\n- Chicken thigh\n- Coconut milk\n- Green curry paste\n- Bamboo shoots\n- Thai basil\n- Fish sauce\n- Palm sugar\n- Eggplant\n- Bell pepper\n- Jasmine rice\n\n### Instructions\n1. Heat coconut cream in a wok until oil separates\n2. Fry curry paste for 2 minutes\n3. Add sliced chicken, cook until sealed\n4. Pour in coconut milk and bring to a simmer\n5. Add eggplant and bamboo shoots, cook for 10 minutes\n6. Season with fish sauce and palm sugar\n7. Add bell pepper and Thai basil\n8. Serve over jasmine rice\n\nThis creamy, aromatic curry is a classic use of chicken and coconut milk — the coconut cream splits to fry the curry paste, which builds a ton of flavor.\n\nIf you'd like a milder alternative, I also have a **Chicken Tikka Masala** recipe, though that one uses heavy cream instead of coconut milk. Want the details on that one?",
+    "execution_time": 3.9075,
+    "tokens": {
+      "input_tokens": 2195,
+      "output_tokens": 495,
+      "total_tokens": 2690,
+      "cache_read_tokens": 1600,
+      "requests": 3
+    },
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "cost": 0.00038475,
+    "pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    }
+  },
+  {
+    "question": "I want something easy and healthy for dinner",
+    "category": "preference",
+    "type": "vague",
+    "output": "Here are three easy and healthy dinner options I found:\n\n1. **Vegetable Stir Fry** (Chinese) — Ready in ~25 minutes, serves 3\n   - Packed with broccoli, bell pepper, carrot, and snap peas in a sesame-ginger soy sauce over rice\n   - Vegetarian, vegan, and quick\n\n2. **Miso Soup** (Japanese) — Ready in ~15 minutes, serves 4\n   - A light, comforting soup with silken tofu, wakame seaweed, and green onion\n   - Vegan-adaptable\n\n3. **Greek Salad** (Greek) — Ready in just 10 minutes, no cooking required, serves 4\n   - Fresh cucumber, tomato, red onion, Kalamata olives, and feta with an olive oil–oregano dressing\n   - Vegetarian and no-cook\n\nThe stir fry is probably the most filling as a main dish, while the miso soup would be great paired with something else. Would you like the full instructions for any of these?",
+    "execution_time": 2.4142,
+    "tokens": {
+      "input_tokens": 1194,
+      "output_tokens": 315,
+      "total_tokens": 1509,
+      "cache_read_tokens": 896,
+      "requests": 2
+    },
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "cost": 0.00022908,
+    "pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    }
+  },
+  {
+    "question": "How do I make sushi?",
+    "category": "missing-recipe",
+    "type": "not-in-collection",
+    "output": "I don't have a sushi recipe in my collection, so I can't walk you through making sushi from my recipe data.\n\nI did find one Japanese recipe that might interest you as a pairing or alternative:\n\n**Miso Soup** (Japanese, easy)\n- Prep: 5 min, Cook: 10 min, Serves: 4\n- Ingredients: dashi stock, white miso paste, silken tofu, wakame seaweed, green onion\n- Tags: soup, quick, healthy, vegan-adaptable\n\nWould you like the full instructions for the miso soup? It's actually a great accompaniment to homemade sushi if you're attempting it on your own with outside guidance.",
+    "execution_time": 2.7179,
+    "tokens": {
+      "input_tokens": 1593,
+      "output_tokens": 266,
+      "total_tokens": 1859,
+      "cache_read_tokens": 896,
+      "requests": 3
+    },
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "cost": 0.00026443,
+    "pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    }
+  },
+  {
+    "question": "What temperature should I set my oven to for the lava cake?",
+    "category": "recipe-detail",
+    "type": "specific",
+    "output": "For the Chocolate Lava Cake, you should set your oven to **425°F**.\n\nA few tips from the recipe:\n- Bake for **exactly 12-14 minutes** — timing is critical for lava cakes!\n- The **edges should be firm but the center should still be soft** when done\n- Invert onto plates, dust with powdered sugar, and **serve immediately** while the center is still molten\n\nSince it's listed as a \"hard\" difficulty recipe, keep a close eye on the oven during that baking window — even a minute or two too long and you'll lose that gooey center. Enjoy! 🍫",
+    "execution_time": 2.421,
+    "tokens": {
+      "input_tokens": 1824,
+      "output_tokens": 226,
+      "total_tokens": 2050,
+      "cache_read_tokens": 1472,
+      "requests": 3
+    },
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "cost": 0.00020996,
+    "pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    }
+  },
+  {
+    "question": "I want pasta",
+    "category": "preference",
+    "type": "vague",
+    "output": "Great choice! I found a classic pasta recipe for you:\n\n## Spaghetti Carbonara 🍝\n*Italian | Medium difficulty | 10 min prep + 20 min cook | Serves 4*\n\n**Ingredients:**\n- Spaghetti\n- Guanciale\n- Egg yolks\n- Pecorino romano\n- Black pepper\n- Salt\n\n**Instructions:**\n1. Cook spaghetti in salted water\n2. Crisp guanciale in a pan\n3. Whisk egg yolks with grated pecorino and black pepper\n4. Drain pasta, reserving some water\n5. Toss hot pasta with guanciale, then quickly stir in egg mixture **off heat**\n6. Add pasta water as needed for a creamy sauce\n7. Serve immediately with extra pecorino\n\n💡 **Tip:** The key to a silky carbonara is adding the egg mixture off the heat so it doesn't scramble — the residual heat and pasta water create that creamy sauce.\n\nWould you like the full details on this one, or are you looking for a different type of pasta dish?",
+    "execution_time": 3.2908,
+    "tokens": {
+      "input_tokens": 1802,
+      "output_tokens": 358,
+      "total_tokens": 2160,
+      "cache_read_tokens": 1012,
+      "requests": 3
+    },
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "cost": 0.00032786,
+    "pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    }
+  },
+  {
+    "question": "What Italian dishes do you have?",
+    "category": "cuisine-search",
+    "type": "filtered",
+    "output": "Here are the Italian dishes in my collection:\n\n1. **Classic Margherita Pizza** — Easy, vegetarian\n   - Prep: 20 min | Cook: 15 min | Serves 4\n   - Made with pizza dough, San Marzano tomatoes, fresh mozzarella, and basil\n\n2. **Spaghetti Carbonara** — Medium difficulty\n   - Prep: 10 min | Cook: 20 min | Serves 4\n   - A classic pasta with guanciale, egg yolks, pecorino romano, and black pepper\n\n3. **Mushroom Risotto** — Medium difficulty, vegetarian\n   - Prep: 10 min | Cook: 35 min | Serves 4\n   - Creamy comfort food with arborio rice, mixed mushrooms, and parmesan\n\nWould you like the full recipe and instructions for any of these?",
+    "execution_time": 1.9168,
+    "tokens": {
+      "input_tokens": 1170,
+      "output_tokens": 241,
+      "total_tokens": 1411,
+      "cache_read_tokens": 912,
+      "requests": 2
+    },
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "cost": 0.00018656,
+    "pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    }
+  },
+  {
+    "question": "What can I make with chickpeas?",
+    "category": "ingredient-search",
+    "type": "ingredient-based",
+    "output": "I found a great chickpea recipe in my collection:\n\n## 🥙 Falafel Wrap\n**Middle Eastern | Medium difficulty | 30 min prep + 15 min cook | Serves 4**\n\n**Ingredients:**\n- Chickpeas (dried)\n- Onion, garlic, parsley, cilantro\n- Cumin, coriander\n- Flour, baking powder\n- Pita bread, tahini\n- Lettuce, tomato, pickles\n\n**Instructions:**\n1. Soak dried chickpeas overnight (don't use canned — it makes a difference!)\n2. Blend chickpeas with onion, garlic, herbs, and spices until coarse\n3. Mix in flour and baking powder\n4. Form into balls or patties\n5. Deep fry at 350°F for 3-4 minutes until dark golden\n6. Serve in pita with tahini sauce, lettuce, tomato, and pickles\n\nIt's vegetarian and vegan-friendly, too. 🌱\n\nUnfortunately, that's the only chickpea recipe I currently have. If falafel isn't quite what you're in the mood for, I could also search for something else — for example, a soup, curry, or salad that might pair well with chickpeas. Just let me know!",
+    "execution_time": 3.2907,
+    "tokens": {
+      "input_tokens": 1906,
+      "output_tokens": 387,
+      "total_tokens": 2293,
+      "cache_read_tokens": 0,
+      "requests": 3
+    },
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "cost": 0.0004794,
+    "pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    }
+  },
+  {
+    "question": "Can I use bacon instead of guanciale in carbonara?",
+    "category": "unsupported-advice",
+    "type": "substitution",
+    "output": "Yes, you can! Bacon is a common and practical substitute for guanciale in carbonara. A few notes on how it affects the dish:\n\n- **Flavor**: Guanciale (cured pork jowl) has a richer, more delicate, slightly sweeter flavor than bacon, which is smoked and saltier. Your carbonara will taste a bit smokier with bacon.\n- **Fat rendering**: Both render nicely, but bacon can release more liquid. Render it slowly over medium heat until crisp, then drain off excess fat if needed before tossing with the pasta.\n- **Seasoning**: Since bacon is saltier, taste before adding extra salt to the dish.\n\nFor best results with the classic method (crisp the pork, toss hot pasta with it, then stir in the egg-pecorino mixture off the heat), bacon works perfectly fine — just expect a slightly smokier, more familiar flavor than the traditional Roman version.\n\nIf you ever want to get closer to the authentic taste, **pancetta** (unsmoked Italian cured pork belly) is a middle-ground substitute — less smoky than bacon but more available than guanciale. Would you like the full Spaghetti Carbonara recipe from our collection?",
+    "execution_time": 3.8958,
+    "tokens": {
+      "input_tokens": 2065,
+      "output_tokens": 498,
+      "total_tokens": 2563,
+      "cache_read_tokens": 1140,
+      "requests": 3
+    },
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "cost": 0.00042195,
+    "pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    }
+  },
+  {
+    "question": "Can I replace the eggs in banana pancakes with applesauce?",
+    "category": "unsupported-advice",
+    "type": "substitution",
+    "output": "Yes, you can! Applesauce is a common egg substitute in baking. Here's how it would work with our Banana Pancakes recipe (recipe #11), which calls for eggs along with ripe bananas, flour, baking powder, milk, butter, and vanilla:\n\n**The substitution:**\n- Use **1/4 cup unsweetened applesauce per egg** called for in the recipe.\n\n**What to expect:**\n- Applesauce works as a **binder**, so the pancakes will hold together fine.\n- However, eggs also add structure and lift, so applesauce-only pancakes tend to be **a bit denser and more delicate** — flip them gently!\n- You may notice a subtle apple flavor, though the banana and vanilla will mostly cover it.\n\n**Good news for this particular recipe:** Since it already uses mashed bananas, which provide plenty of moisture and natural binding on their own, the applesauce swap should work especially smoothly here. The batter may be slightly wetter, so let it rest a minute or two before cooking, and keep the heat at medium so the pancakes set properly before flipping.\n\nWould you like me to look up any other recipes with egg-free options?",
+    "execution_time": 4.0652,
+    "tokens": {
+      "input_tokens": 1882,
+      "output_tokens": 494,
+      "total_tokens": 2376,
+      "cache_read_tokens": 1408,
+      "requests": 3
+    },
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "cost": 0.00036034,
+    "pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    }
+  },
+  {
+    "question": "Is the Caesar salad vegetarian?",
+    "category": "dietary-question",
+    "type": "ingredient-check",
+    "output": "No, the Caesar Salad in our collection is **not vegetarian**. Its ingredients include:\n\n- **Anchovy paste** (a fish product — this is the main issue)\n- **Egg yolk** (in the Caesar dressing, which some vegetarians avoid)\n- **Parmesan cheese** (traditional parmesan uses animal rennet, a concern for strict vegetarians)\n\nThe anchovies are what make it definitively non-vegetarian — they're a classic component of authentic Caesar dressing.\n\nIf you're looking for a vegetarian salad instead, our **Greek Salad** is tagged vegetarian, made with cucumber, tomato, red onion, Kalamata olives, feta, and a simple olive oil and red wine vinegar dressing. Would you like the full recipe?",
+    "execution_time": 2.3647,
+    "tokens": {
+      "input_tokens": 1118,
+      "output_tokens": 290,
+      "total_tokens": 1408,
+      "cache_read_tokens": 896,
+      "requests": 2
+    },
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "cost": 0.00020518,
+    "pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    }
+  },
+  {
+    "question": "What vegan recipes do you have?",
+    "category": "dietary-preference",
+    "type": "filtered",
+    "output": "Here are the vegan recipes in my collection:\n\n## 🌱 Vegan Recipes\n\n**1. Vegetable Stir Fry** (Chinese, easy)\n- ⏱️ Prep: 15 min | Cook: 10 min | Serves: 3\n- Broccoli, bell pepper, carrot, snap peas, soy sauce, sesame oil, garlic, ginger, cornstarch, served over rice\n- Quick, healthy, and ready in 25 minutes!\n\n**2. Falafel Wrap** (Middle Eastern, medium)\n- ⏱️ Prep: 30 min | Cook: 15 min | Serves: 4\n- Chickpeas, onion, garlic, fresh herbs, spices, wrapped in pita with tahini, lettuce, tomato, and pickles\n- A flavorful street-food classic\n\n**3. Miso Soup** (Japanese, easy) — *vegan-adaptable*\n- ⏱️ Prep: 5 min | Cook: 10 min | Serves: 4\n- White miso paste, silken tofu, wakame seaweed, green onion\n- Note: this one is tagged \"vegan-adaptable\" — you'd want to use a vegan dashi (like kombu-based) instead of traditional bonito dashi\n\nWould you like the full instructions for any of these?",
+    "execution_time": 2.5292,
+    "tokens": {
+      "input_tokens": 1190,
+      "output_tokens": 367,
+      "total_tokens": 1557,
+      "cache_read_tokens": 912,
+      "requests": 2
+    },
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "cost": 0.00025256,
+    "pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    }
+  },
+  {
+    "question": "What's the calorie count for the chocolate lava cake?",
+    "category": "unsupported-advice",
+    "type": "nutrition",
+    "output": "I found the Chocolate Lava Cake recipe in our collection, but unfortunately it doesn't include nutritional information like calorie counts. The recipe data only contains:\n\n- **Ingredients**: dark chocolate, butter, eggs, sugar, flour, vanilla extract, powdered sugar\n- **Servings**: 4\n- **Time**: 20 min prep, 14 min cook\n- **Instructions** for baking\n\nIf you'd like a rough estimate, you could calculate it based on the ingredient quantities you use — chocolate, butter, and sugar are the main calorie contributors in this type of dessert. But I don't want to guess at exact numbers since I don't have the specific quantities in the recipe data.\n\nIs there anything else about this recipe I can help you with?",
+    "execution_time": 2.6145,
+    "tokens": {
+      "input_tokens": 1802,
+      "output_tokens": 236,
+      "total_tokens": 2038,
+      "cache_read_tokens": 1428,
+      "requests": 3
+    },
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "cost": 0.00021694,
+    "pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    }
+  },
+  {
+    "question": "How do I make ramen?",
+    "category": "missing-recipe",
+    "type": "not-in-collection",
+    "output": "I'm sorry, but I don't have a ramen recipe in my collection — I searched for ramen and noodle dishes and came up empty.\n\nThe closest thing I found is a **Miso Soup (Japanese, easy)**:\n- **Prep:** 5 min | **Cook:** 10 min | **Serves:** 4\n- **Ingredients:** dashi stock, white miso paste, silken tofu, wakame seaweed, green onion\n- **Tags:** soup, quick, healthy, vegan-adaptable\n\nWould you like the full instructions for the miso soup? It's not ramen, but it's a quick and comforting Japanese soup. If you're set on making ramen specifically, I'd recommend checking a site dedicated to it, since I can't provide a reliable recipe for it from my collection.",
+    "execution_time": 3.632,
+    "tokens": {
+      "input_tokens": 2371,
+      "output_tokens": 451,
+      "total_tokens": 2822,
+      "cache_read_tokens": 0,
+      "requests": 4
+    },
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "cost": 0.00058115,
+    "pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    }
+  },
+  {
+    "question": "What's the best restaurant in town?",
+    "category": "out-of-scope",
+    "type": "restaurant-recommendation",
+    "output": "I'm a recipe assistant, so I don't have information about local restaurants — I can't recommend dining spots in your area.\n\nWhat I *can* help with is finding recipes to cook at home! If you're craving a particular type of food (Italian, Thai, comfort food, desserts, etc.), just let me know and I can search my recipe collection for you. Maybe you'll find something delicious enough that you won't need to eat out! 🍳",
+    "execution_time": 1.2478,
+    "tokens": {
+      "input_tokens": 466,
+      "output_tokens": 162,
+      "total_tokens": 628,
+      "cache_read_tokens": 448,
+      "requests": 1
+    },
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "cost": 9.714e-05,
+    "pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    }
+  },
+  {
+    "question": "How do I fix my dishwasher?",
+    "category": "out-of-scope",
+    "type": "non-cooking",
+    "output": "I'm a recipe assistant, so appliance repair is a bit outside my wheelhouse! I can help you find recipes, get cooking instructions, or answer questions about ingredients and cooking techniques.\n\nFor dishwasher repair, I'd suggest:\n- **Checking the manual** for troubleshooting steps\n- **Common quick fixes**: cleaning the filter, checking the spray arms for clogs, and making sure the door latch is secure\n- **Online resources** like the manufacturer's website or appliance repair tutorials\n\nIn the meantime, if you'd like to cook up something delicious while the dishes pile up, I'm happy to help! 😄 Is there a recipe I can find for you?",
+    "execution_time": 1.5125,
+    "tokens": {
+      "input_tokens": 465,
+      "output_tokens": 191,
+      "total_tokens": 656,
+      "cache_read_tokens": 448,
+      "requests": 1
+    },
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "cost": 0.00011149,
+    "pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    }
+  },
+  {
+    "question": "Can I make the falafel with canned chickpeas?",
+    "category": "recipe-detail",
+    "type": "explicit-restriction",
+    "output": "The recipe for the Falafel Wrap (recipe #15) explicitly calls for **dried chickpeas, not canned** — the instructions say to soak dried chickpeas overnight and note \"(do not use canned).\"\n\nThe reason for this is that canned chickpeas are already cooked and soft, which makes the falafel mixture too wet and mushy — the patties tend to fall apart when fried. Soaked (but uncooked) dried chickpeas give the mixture the right texture and binding.\n\nSo while you *could* technically try it with canned chickpeas, you'd be going against the recipe's instructions, and the results would likely be disappointing. If you want to make this recipe, plan ahead for the overnight soak — the prep time listed (30 minutes) doesn't include that soaking step.\n\nIs there anything else you'd like to know about this recipe?",
+    "execution_time": 3.698,
+    "tokens": {
+      "input_tokens": 1926,
+      "output_tokens": 493,
+      "total_tokens": 2419,
+      "cache_read_tokens": 1524,
+      "requests": 3
+    },
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "cost": 0.00035252,
+    "pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    }
+  },
+  {
+    "question": "Do I stir in the carbonara egg mixture while the pan is on the heat?",
+    "category": "recipe-detail",
+    "type": "technique",
+    "output": "No — according to this Spaghetti Carbonara recipe, you should stir in the egg mixture **off the heat**. Here's the sequence:\n\n1. Toss the hot, drained pasta with the crispy guanciale\n2. Quickly stir in the egg mixture (egg yolks whisked with pecorino and black pepper) **off heat**\n3. Add reserved pasta water as needed to create a creamy sauce\n\nKeeping the pan off the heat at this step is key — the residual heat from the pasta is enough to cook the eggs into a silky sauce. If the pan is still on the burner, the eggs can scramble and you'll end up with bits of cooked egg instead of a smooth, creamy sauce. Serve it immediately with extra pecorino!",
+    "execution_time": 2.7484,
+    "tokens": {
+      "input_tokens": 1897,
+      "output_tokens": 280,
+      "total_tokens": 2177,
+      "cache_read_tokens": 1524,
+      "requests": 3
+    },
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "cost": 0.00024167,
+    "pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    }
+  },
+  {
+    "question": "I need dinner without turning on the stove",
+    "category": "preference",
+    "type": "no-cook",
+    "output": "Here are two dinner options that never touch the stove:\n\n## 🥗 Greek Salad *(my top pick)*\n**10 minutes | Serves 4 | Vegetarian & Healthy**\n\n**Ingredients:** cucumber, tomato, red onion, Kalamata olives, feta cheese, olive oil, oregano, red wine vinegar\n\n**Instructions:**\n1. Chop cucumber, tomatoes, and red onion into chunks\n2. Combine in a bowl\n3. Add Kalamata olives and crumbled feta\n4. Dress with olive oil, red wine vinegar, and oregano\n5. Toss gently and let sit 5 minutes before serving\n\n## 🥬 Caesar Salad\n**15 minutes | Serves 2**\n\n**Ingredients:** romaine lettuce, parmesan cheese, croutons, lemon juice, anchovy paste, garlic, olive oil, egg yolk\n\n**Instructions:**\n1. Wash and chop romaine lettuce\n2. Make dressing: whisk egg yolk, anchovy paste, garlic, lemon juice, and olive oil\n3. Toss lettuce with dressing\n4. Top with shaved parmesan and croutons\n\n**A note:** the Caesar's homemade dressing uses a raw egg yolk, so the Greek Salad is the safer/easier choice if that's a concern. If you'd like something heartier, you could serve either with store-bought bread, rotisserie chicken, or canned beans — no stove required! Want the full quantities for either recipe?",
+    "execution_time": 4.2664,
+    "tokens": {
+      "input_tokens": 2853,
+      "output_tokens": 561,
+      "total_tokens": 3414,
+      "cache_read_tokens": 1856,
+      "requests": 3
+    },
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "cost": 0.00048573,
+    "pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    }
+  },
+  {
+    "question": "How many people does the mushroom risotto serve?",
+    "category": "recipe-detail",
+    "type": "servings",
+    "output": "The Mushroom Risotto serves **4 people**. It's an Italian dish with a 10-minute prep time and 35-minute cook time. If you're cooking for a different group size, the quantities can easily be scaled up or down — just let me know if you'd like the full recipe details!",
+    "execution_time": 1.5022,
+    "tokens": {
+      "input_tokens": 1069,
+      "output_tokens": 153,
+      "total_tokens": 1222,
+      "cache_read_tokens": 896,
+      "requests": 2
+    },
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "cost": 0.00012933,
+    "pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    }
+  },
+  {
+    "question": "Can I substitute almond milk in the pancakes?",
+    "category": "unsupported-advice",
+    "type": "substitution",
+    "output": "Yes! In these **Banana Pancakes**, the milk is simply whisked into the wet ingredients with the mashed bananas, eggs, and vanilla — so it's an easy swap.\n\n**Tips for substituting almond milk:**\n- Use a **1:1 ratio** — same amount of almond milk as the recipe calls for in regular milk.\n- **Unsweetened almond milk** is best, especially since the bananas and maple syrup already add sweetness. If you only have sweetened/vanilla varieties, they'll work too but may make the pancakes slightly sweeter.\n- Since almond milk is thinner and less rich than dairy milk, the batter may be a touch looser — that's fine, but if it seems too thin, you can let it rest a few minutes (the flour will hydrate) before cooking.\n- Everything else stays the same: cook over medium heat in butter until bubbles form on the surface, then flip.\n\nThe bananas add plenty of moisture and flavor, so you shouldn't miss the dairy at all. Enjoy!",
+    "execution_time": 3.8782,
+    "tokens": {
+      "input_tokens": 1921,
+      "output_tokens": 406,
+      "total_tokens": 2327,
+      "cache_read_tokens": 1472,
+      "requests": 3
+    },
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "cost": 0.00031451,
+    "pricing": {
+      "currency": "USD",
+      "estimated": true,
+      "input_per_million": 0.15,
+      "cached_input_per_million": 0.03,
+      "output_per_million": 0.5,
+      "source": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "verified_date": "2026-10-31"
+    }
+  }
+]

@@ -1,0 +1,22 @@
+question,category,type
+How do I make spaghetti carbonara?,specific-recipe,direct
+What can I cook with chicken and coconut milk?,ingredient-search,ingredient-based
+I want something easy and healthy for dinner,preference,vague
+How do I make sushi?,missing-recipe,not-in-collection
+What temperature should I set my oven to for the lava cake?,recipe-detail,specific
+I want pasta,preference,vague
+What Italian dishes do you have?,cuisine-search,filtered
+What can I make with chickpeas?,ingredient-search,ingredient-based
+Can I use bacon instead of guanciale in carbonara?,unsupported-advice,substitution
+Can I replace the eggs in banana pancakes with applesauce?,unsupported-advice,substitution
+Is the Caesar salad vegetarian?,dietary-question,ingredient-check
+What vegan recipes do you have?,dietary-preference,filtered
+What's the calorie count for the chocolate lava cake?,unsupported-advice,nutrition
+How do I make ramen?,missing-recipe,not-in-collection
+What's the best restaurant in town?,out-of-scope,restaurant-recommendation
+How do I fix my dishwasher?,out-of-scope,non-cooking
+Can I make the falafel with canned chickpeas?,recipe-detail,explicit-restriction
+Do I stir in the carbonara egg mixture while the pan is on the heat?,recipe-detail,technique
+I need dinner without turning on the stove,preference,no-cook
+How many people does the mushroom risotto serve?,recipe-detail,servings
+Can I substitute almond milk in the pancakes?,unsupported-advice,substitution

@@ -1,0 +1,31 @@
+{
+  "rubric_version": "human-notes-v1",
+  "metrics": {
+    "tp": 6,
+    "fp": 10,
+    "fn": 0,
+    "tn": 5,
+    "total": 21,
+    "unlabeled": 0,
+    "disagreements": 10,
+    "accuracy": 0.5238095238095238,
+    "precision": 0.375,
+    "recall": 1.0
+  },
+  "input_sha256": "a3031ae379009c75ca69a2e4d8e6d55d45592473bc84229bcb366b9b45ecd9ef",
+  "prompt_sha256": "402379bc15c928d85e13c5da462d80131b881a6e83bf8c04eda2bd5e1c6b28a4",
+  "recipes_sha256": "593a56e1316688bb84214e1070b17a8b0f5408a90899ff21f5d0e1877776e84e",
+  "results_path": "judge_runs/human-notes-v1/results_judged.json",
+  "html_path": "judge_runs/human-notes-v1/results_judged.html",
+  "judge_model": "accounts/fireworks/models/glm-5p3-flash",
+  "execution_notes": null,
+  "judge_cost_usd": 0.0231663,
+  "judge_execution_time": 150.8609,
+  "judge_tokens": {
+    "input_tokens": 76352,
+    "output_tokens": 23427,
+    "total_tokens": 99779,
+    "cache_read_tokens": 0,
+    "requests": 21
+  }
+}

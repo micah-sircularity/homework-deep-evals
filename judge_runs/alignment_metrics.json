@@ -1,0 +1,134 @@
+{
+  "generated_at": "2026-10-31T21:40:18.447510+00:00",
+  "positive_class": "bad",
+  "human_source": "results_reviewed.json",
+  "runs": [
+    {
+      "rubric_version": "human-notes-v1",
+      "metrics": {
+        "tp": 6,
+        "fp": 10,
+        "fn": 0,
+        "tn": 5,
+        "total": 21,
+        "unlabeled": 0,
+        "disagreements": 10,
+        "accuracy": 0.5238095238095238,
+        "precision": 0.375,
+        "recall": 1.0
+      },
+      "input_sha256": "a3031ae379009c75ca69a2e4d8e6d55d45592473bc84229bcb366b9b45ecd9ef",
+      "prompt_sha256": "402379bc15c928d85e13c5da462d80131b881a6e83bf8c04eda2bd5e1c6b28a4",
+      "recipes_sha256": "593a56e1316688bb84214e1070b17a8b0f5408a90899ff21f5d0e1877776e84e",
+      "results_path": "judge_runs/human-notes-v1/results_judged.json",
+      "html_path": "judge_runs/human-notes-v1/results_judged.html",
+      "judge_model": "accounts/fireworks/models/glm-5p3-flash",
+      "execution_notes": null,
+      "judge_cost_usd": 0.0231663,
+      "judge_execution_time": 150.8609,
+      "judge_tokens": {
+        "input_tokens": 76352,
+        "output_tokens": 23427,
+        "total_tokens": 99779,
+        "cache_read_tokens": 0,
+        "requests": 21
+      }
+    },
+    {
+      "rubric_version": "human-notes-v2",
+      "metrics": {
+        "tp": 6,
+        "fp": 4,
+        "fn": 0,
+        "tn": 11,
+        "total": 21,
+        "unlabeled": 0,
+        "disagreements": 4,
+        "accuracy": 0.8095238095238095,
+        "precision": 0.6,
+        "recall": 1.0
+      },
+      "input_sha256": "a3031ae379009c75ca69a2e4d8e6d55d45592473bc84229bcb366b9b45ecd9ef",
+      "prompt_sha256": "2ebad5571ee3ce423af7ba5b061dd07ec3da4d4805bb8f7d25aa8d1d675be0bd",
+      "recipes_sha256": "593a56e1316688bb84214e1070b17a8b0f5408a90899ff21f5d0e1877776e84e",
+      "results_path": "judge_runs/human-notes-v2/results_judged.json",
+      "html_path": "judge_runs/human-notes-v2/results_judged.html",
+      "judge_model": "accounts/fireworks/models/glm-5p3-flash",
+      "execution_notes": {
+        "initial_max_tokens": 4096,
+        "resume_max_tokens": 8192,
+        "completed_before_resume": 17,
+        "failed_question": "Do I stir in the carbonara egg mixture while the pan is on the heat?",
+        "failure": "Model token limit (4096) exceeded before structured response",
+        "failed_call_usage": null,
+        "failed_call_cost_usd": null,
+        "cost_note": "Reported totals include successful evaluations only; failed call cost is unknown and excluded."
+      },
+      "judge_cost_usd": 0.02192167,
+      "judge_execution_time": 160.053,
+      "judge_tokens": {
+        "input_tokens": 78389,
+        "output_tokens": 28790,
+        "total_tokens": 107179,
+        "cache_read_tokens": 35264,
+        "requests": 21
+      }
+    }
+  ],
+  "changed_labels": [
+    {
+      "question": "How do I make spaghetti carbonara?",
+      "human_label": "good",
+      "human_notes": "",
+      "before": "bad",
+      "after": "good",
+      "before_reasoning": "The core recipe facts are accurate (recipe 6: Italian, medium, prep 10, cook 20, serves 4; ingredients spaghetti, guanciale, egg yolks, pecorino romano, black pepper, salt; steps for cooking pasta, crisping guanciale, whisking yolks with pecorino and pepper, tossing off heat, adding reserved pasta water, serving with extra pecorino all match). However, the response adds unsupported explanations and ingredient properties not present in the collection, which rubric items 2 and 7 prohibit even in otherwise correct answers: (1) \"Guanciale (cured pork cheek)\" states an ingredient property/definition not found in the recipe; (2) \"off the heat (this is key to avoid scrambling the eggs!)\" invents a reason for the recipe's instruction \u2014 the recipe only says to \"quickly stir in egg mixture off heat\" without explaining why; (3) the \"Pro tip: The heat control is everything with carbonara \u2014 tossing the egg mixture in off-heat keeps the sauce creamy rather than eggy\" adds outside cooking knowledge and a causal claim about technique absent from the recipe (the recipe attributes the creamy sauce to pasta water, not off-heat tossing). These are substantive unsupported additions, not harmless formatting or faithful paraphrase, so the answer is marked bad.",
+      "after_reasoning": "The answer faithfully reproduces recipe 6 (Spaghetti Carbonara): identical ingredient list (spaghetti, guanciale, egg yolks, pecorino romano, black pepper, salt), correct metadata (Italian, medium, 10 min prep, 20 min cook, 4 servings), and all steps match \u2014 cook spaghetti in salted water, crisp guanciale, whisk yolks with pecorino and pepper, drain reserving water, toss hot pasta with guanciale, stir in egg mixture off heat, add pasta water for creaminess, serve immediately with extra pecorino. The two elaborations are harmless: \"(cured pork cheek)\" is an accurate, brief ingredient definition, and the note that off-heat addition avoids scrambling simply clarifies the recipe's own explicit \"off heat\" instruction without changing any step, ingredient, or technique. No substitutions, invented facts, or out-of-scope advice are present."
+    },
+    {
+      "question": "I want something easy and healthy for dinner",
+      "human_label": "good",
+      "human_notes": "",
+      "before": "bad",
+      "after": "good",
+      "before_reasoning": "The recipe selections themselves are accurate: all three suggestions (Vegetable Stir Fry, Miso Soup, Greek Salad) are tagged easy and healthy in the collection, and the stated times (~25 min, ~15 min, ~10 min), servings (3, 4, 4), and key ingredients all match recipes 5, 10, and 8 exactly. However, the closing sentence introduces unsupported outside claims that violate the rubric: (a) \"the stir fry is probably the most filling as a main dish\" is a comparative food-effect/satiety claim not supported by any recipe data (no recipe notes fillingness or main-dish status), and (b) \"the miso soup would be great paired with something else\" is serving/pairing advice that appears nowhere in the collection \u2014 the Miso Soup entry contains no pairing or course guidance. The rubric explicitly prohibits adding outside cooking knowledge, pairings, and ingredient/food-effect properties not supported by the collection, even when the main answer is otherwise correct.",
+      "after_reasoning": "All three recommendations are verified against the collection and match the \"easy and healthy\" request. Vegetable Stir Fry (id 5): easy, prep 15 + cook 10 = ~25 min, serves 3, tagged vegetarian/vegan/quick/healthy \u2014 all claims check out; \"sesame-ginger soy sauce over rice\" faithfully reflects the sesame oil, soy sauce, ginger, and rice ingredients. Miso Soup (id 10): easy, 5 + 10 = ~15 min, serves 4, tagged soup/quick/healthy/vegan-adaptable \u2014 \"vegan-adaptable\" matches the tag. Greek Salad (id 8): easy, prep 10, cook 0 = \"no cooking required\" is correct, serves 4, tagged vegetarian/no-cook/healthy; the ingredient list (cucumber, tomato, red onion, Kalamata olives, feta, olive oil\u2013oregano dressing) matches the recipe. The closing line about the stir fry being most filling and miso soup pairing with something else is an optional serving suggestion / conversational framing, explicitly permitted by the rubric, and does not alter any recipe. No unsupported substitutions, no invented nutrition data, no fabricated recipes."
+    },
+    {
+      "question": "I want pasta",
+      "human_label": "good",
+      "human_notes": "",
+      "before": "bad",
+      "after": "good",
+      "before_reasoning": "The recommended recipe itself (Spaghetti Carbonara, id 6) is accurately presented \u2014 name, cuisine, difficulty, times, servings, ingredients, and steps all match the collection, and the closing offer to find another pasta dish is harmless. However, the answer includes an added \"Tip\" with unsupported explanations: the collection never states that off-heat addition prevents the eggs from scrambling, that \"residual heat\" contributes to the sauce, or that the dish is \"silky.\" The recipe only says to \"quickly stir in egg mixture off heat\" and to \"add pasta water as needed for a creamy sauce.\" Per the rubric, adding outside cooking knowledge/reasons (why the technique works, egg curdling behavior) not supported by the recipe makes the answer bad, even though the main recipe facts are correct.",
+      "after_reasoning": "The user asked for pasta, and the collection contains exactly one pasta dish: Spaghetti Carbonara (id 6). The answer correctly identifies it as a classic pasta recipe and reproduces the recipe faithfully: ingredients (spaghetti, guanciale, egg yolks, pecorino romano, black pepper, salt), times (10 min prep + 20 min cook), servings (4), cuisine (Italian), and difficulty (medium) all match the collection, and the numbered instructions are a faithful paraphrase of the recipe, including the off-heat egg addition and pasta water for creaminess. The only added content is the tip explaining the off-heat step; this is a brief, accurate elaboration of the recipe's own instructions (\"quickly stir in egg mixture off heat. Add pasta water as needed for a creamy sauce\") rather than an unsupported substitution or advice that changes the dish. No missing-recipe or scope issues arise. The answer directly and correctly addresses the request."
+    },
+    {
+      "question": "Is the Caesar salad vegetarian?",
+      "human_label": "good",
+      "human_notes": "",
+      "before": "bad",
+      "after": "good",
+      "before_reasoning": "The core answer is correct: the Caesar Salad (recipe 3) contains anchovy paste, a fish product, and it lacks the \"vegetarian\" tag, so saying it is not vegetarian is supported. However, the answer adds two unsupported outside claims. First, it asserts that egg yolk is something \"some vegetarians avoid\" \u2014 the collection provides no information about vegetarian dietary practices regarding eggs. Second, and more clearly, it claims \"traditional parmesan uses animal rennet, a concern for strict vegetarians\" \u2014 an ingredient-property/production claim entirely absent from the collection, violating the rule against adding outside ingredient knowledge. Since the rubric requires marking bad if any substantive claim violates the goals even when the main answer is correct, the rennet and egg-yolk statements make this answer bad. (The brief offer of the Greek Salad, which is tagged vegetarian and correctly described, was fine.)",
+      "after_reasoning": "The core answer is correct and directly supported by the collection: the Caesar Salad (id 3) lists anchovy paste among its ingredients and carries no vegetarian tag, so \"no, it is not vegetarian\" is the right determination, with anchovy paste correctly identified as the disqualifying ingredient. The offered alternative, the Greek Salad (id 8), is indeed tagged vegetarian and its described ingredients (cucumber, tomato, red onion, Kalamata olives, feta, olive oil, red wine vinegar dressing) match the recipe \u2014 a brief, valid alternative offer consistent with rule 4. The additional hedged notes that some vegetarians avoid egg yolk and that traditional parmesan may involve animal rennet are brief, accurate background elaborations that do not contradict the recipe, invent substitutions, change any steps, or mislead; the answer explicitly keeps anchovy paste as the definitive reason. No factual errors, contradictions, or unsupported cooking techniques are present."
+    },
+    {
+      "question": "What's the calorie count for the chocolate lava cake?",
+      "human_label": "good",
+      "human_notes": "",
+      "before": "bad",
+      "after": "good",
+      "before_reasoning": "The answer correctly identifies that the Chocolate Lava Cake (recipe id 9) has no calorie/nutrition data, and the listed ingredients, servings (4), and times (20 min prep, 14 min cook) all match the recipe. However, it violates the missing-nutrition rule by adding an unsupported nutrition explanation: \"chocolate, butter, and sugar are the main calorie contributors in this type of dessert.\" The collection contains no nutrition information or ingredient quantities, so no claim about which ingredients drive calories (or any advice on estimating them from ingredient quantities) is supported. Per the rubric, the answer should simply acknowledge the missing nutrition data without inventing nutrition explanations, and this substantive unsupported claim makes the answer bad despite the correct main response.",
+      "after_reasoning": "The user asked for the calorie count of the chocolate lava cake. The collection contains the recipe (id 9) but includes no nutritional data, and the agent correctly acknowledged this rather than inventing numbers \u2014 exactly what the rubric requires for missing nutrition. The details it cited (ingredients: dark chocolate, butter, eggs, sugar, flour, vanilla extract, powdered sugar; 4 servings; 20 min prep / 14 min cook) all match recipe 9. It also appropriately declined to estimate since the recipe provides no quantities. The only extra content \u2014 noting chocolate, butter, and sugar are the main calorie contributors \u2014 is a brief, accurate background remark used to justify not guessing, not a fabricated number, substitution, or material change to the recipe, so it doesn't rise to a disqualifying error. The answer directly and correctly addresses the request within the collection's limits."
+    },
+    {
+      "question": "I need dinner without turning on the stove",
+      "human_label": "good",
+      "human_notes": "",
+      "before": "bad",
+      "after": "good",
+      "before_reasoning": "The two recommended recipes themselves check out: Greek Salad (id 8) has cook_time 0 with a \"no-cook\" tag and its ingredients, 10-minute prep, 4 servings, and vegetarian/healthy claims match the collection; Caesar Salad (id 3) has cook_time 0 with matching 15-minute prep and 2 servings. However, the answer adds several claims with no support in the collection: (1) a safety claim \u2014 \"the Greek Salad is the safer/easier choice\" because of the raw egg yolk \u2014 while the egg yolk is indeed a Caesar ingredient, the judgment that it is \"safer\" is an outside food-safety assertion the collection does not make (and both recipes are rated \"easy,\" so \"easier\" is also unsupported); (2) unsupported pairings/serving suggestions \u2014 \"serve either with store-bought bread, rotisserie chicken, or canned beans\" \u2014 none of which appear in or are endorsed by any recipe; and (3) an offer of \"full quantities for either recipe,\" which the collection does not contain (ingredients are listed without amounts). Additionally, the Caesar ingredient list omits \"Caesar dressing,\" which is in the recipe's ingredient list. Per the rubric, outside safety claims and pairings make the answer bad even though the core recommendations are correct.",
+      "after_reasoning": "The user asked for dinner without using the stove. The answer correctly identifies the only two recipes in the collection with no cooking (Greek Salad, id 8, cook_time 0, tagged no-cook; Caesar Salad, id 3, cook_time 0) and presents them accurately: Greek Salad (10 min, serves 4, vegetarian/healthy) and Caesar Salad (15 min, serves 2) with ingredient lists and step sequences matching the recipes, including \"let sit 5 minutes\" for the Greek Salad and the raw-egg-yolk dressing whisked off-heat for the Caesar. The closing notes are hedged elaborations rather than errors: the observation that the Caesar dressing contains a raw egg yolk is directly grounded in the recipe (egg yolk whisked uncooked into dressing), and the suggestion of no-cook accompaniments like store-bought bread or rotisserie chicken is explicitly optional and does not alter or misrepresent either recipe. Minor omissions (e.g., not repeating the redundant \"Caesar dressing\" line item, since the recipe's own instructions build the dressing from the listed components) are harmless. No factual errors, contradictions, unsupported substitutions, or fabricated recipe facts."
+    }
+  ]
+}
